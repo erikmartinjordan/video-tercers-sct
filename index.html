@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Hola mundo!</title>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta charset = 'UTF-8'>
+    <link rel='stylesheet' href = 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css'/>
+    <script crossorigin src = 'https://unpkg.com/react@17/umd/react.production.min.js'></script>
+    <script src = 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'></script>
+    <link href = 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css' rel = 'stylesheet'/>
+    <link href = './styles/style.css' rel = 'stylesheet'/>
 </head>
-<body style="background: white;">
-    <h1>Hola mundo!</h1>
-    <p>
-        Estamos usando node <script>document.write(process.versions.node)</script>,
-        Chrome <script>document.write(process.versions.chrome)</script>,
-        y Electron <script>document.write(process.versions.electron)</script>.
-    </p>
+<body>
+    <h1>Aplicació de vídeo a tercers de l'SCT</h1>
+    <div id = 'mapa-catalunya'>
+    </div>
 </body>
+<script src = './src/mapa.js'></script>
 </html>

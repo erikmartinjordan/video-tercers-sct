@@ -1,0 +1,10 @@
+{
+    "name": "video-tercers-sct",
+    "version": "0.1.0",
+    "author": "Erik Martín Jordán",
+    "description": "Aplicació vídeo a tercers SCT",
+    "main": "main.js",
+    "devDependencies": {
+        "electron": "^11.1.1"
+    }
+}

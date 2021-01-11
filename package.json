@@ -4,6 +4,9 @@
     "author": "Erik Martín Jordán",
     "description": "Aplicació vídeo a tercers SCT",
     "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
     "devDependencies": {
         "electron": "^11.1.1"
     }

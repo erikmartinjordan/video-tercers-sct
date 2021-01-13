@@ -27,9 +27,9 @@ app.get('/video', function(req, res){
         
     });
     
-    console.log(stream);
+    res.send(stream);
    
-    res.send(
+    /*res.send(
         `<!DOCTYPE html>
             <html>
             <head>
@@ -47,14 +47,14 @@ app.get('/video', function(req, res){
             </head>
             <body>
                 <canvas id = "video"></canvas>
-                <script type = "text/javascript" src = "jsmpeg.js"></script>
-                <script type = "text/javascript">
+                <script src = "https://cdnjs.cloudflare.com/ajax/libs/jsmpeg/0.2/jsmpg.js"></script>
+                <script>
                     var client = new WebSocket( 'ws://localhost:9000/' );
                     var canvas = document.getElementById('video');
                     var player = new jsmpeg(client, {canvas: canvas});
                 </script>
             </body>
             </html>`
-    );
+    );*/
     
 });

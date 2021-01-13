@@ -1,10 +1,6 @@
 const { app, BrowserWindow } = require('electron');
-const ffmpeg                 = require('fluent-ffmpeg');
-const ffmpegPath             = require('ffmpeg-static').replace('app.asar', 'app.asar.unpacked');
 
 require('electron-reload')();
-
-ffmpeg.setFfmpegPath(ffmpegPath);
 
 function createWindow () {
     
@@ -17,16 +13,10 @@ function createWindow () {
     });
 
     win.loadFile('index.html');
-}
-
-function testStream () {
-    
-   
-
     
 }
 
-app.whenReady().then(createWindow).then(testStream);
+app.whenReady().then(createWindow);
 
 app.on('window-all-closed', () => {
     

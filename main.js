@@ -6,31 +6,36 @@ require('electron-reload')();
 function createWindow () {
     
     const win = new BrowserWindow({
+        
         width: 800,
         height: 600,
         webPreferences: {
+            
           nodeIntegration: true
+            
         }
+        
     });
 
     win.loadFile('index.html');
     
 }
 
-function activateCamera (num_camera) {
+async function connectCamera (user, password, address, port, num_output, num_camera) {
     
+    await fetch(`http://${user}:${password}@${address}:${port}/set?operation=connect&output=${num_output}&camera=${num_camera}`);
     
 }
 
-function deactivateCamera (num_camera) {
+async function disconnectCamera (user, password, address, port, num_camera) {
     
-    
+    await fecth(`http://${user}:${password}@${address}:${port}/set?opeartion=disconnect&output=${num_camera}`);
     
 }
 
 function launchVLC (rtsp_link) {
     
-    const path = 'C:\\Program Files\\VideoLAN\\VLC\\vls.exe';
+    const path = 'C:\\Program Files\\VideoLAN\\VLC\\vlc.exe';
      
     const proc = spawn(`"${path}"`, [`http://46.16.226.181:88/?action=stream`], { shell: true });
 
@@ -49,7 +54,7 @@ function launchVLC (rtsp_link) {
 
 }
 
-app.whenReady().then(createWindow).then(launchVLC);
+app.whenReady().then(createWindow);
 
 app.on('window-all-closed', () => {
     

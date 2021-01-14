@@ -1,7 +1,7 @@
 const { app, BrowserWindow, dialog } = require('electron');
 const { spawn }                      = require('child_process');
 
-require('electron-reload')();
+require('electron-reload')(__dirname);
 
 function createWindow () {
     

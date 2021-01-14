@@ -1,3 +1,64 @@
+/*
+*
+* variables globals
+*
+*/
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    --button: #0366d6; 
+    --link: #0366d6;
+}
+button{
+    background: var(--button);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+/*
+*
+* mapa.js
+*
+*/
 #mapa-catalunya{
     height: 100vh;
+}
+/*
+*
+* login.js
+*
+*/
+.Login{
+    background: rgba(1, 1, 1, 0.5);
+    display: flex;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 999999999;
+}
+.Login-Wrapper{
+    background: white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 400px;
+    padding: 20px;
+}
+.Login-Wrapper input{
+    background: lightGray;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.Login img{
+    border-radius: 50%;
+    height: 70px;
+    margin: auto;
+    width: 70px;
 }

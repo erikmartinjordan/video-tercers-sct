@@ -1,4 +1,4 @@
-import config from './config.js';
+import config from './src/config.js';
 
 const Login = () => {
     
@@ -10,13 +10,15 @@ const Login = () => {
         
         let { address, port } = config[user];
         
-        let res = await fetch(`http://${user}:${password}@${address}:${port}/set?operation=status`);
+        console.log(address, port);
+        
+        /*let res = await fetch(`http://${user}:${password}@${address}:${port}/set?operation=status`);
         
         if(res.ok){
             
             setAuth(true);
             
-        }
+        }*/
         
     }
 

@@ -8,6 +8,8 @@ const Login = () => {
     const [pass, setPass] = React.useState(null);
     
     const placeCams = () => {
+        
+        console.log(Object.values(cameres));
                 
         Object.values(cameres).forEach(camera => {
 
@@ -18,7 +20,11 @@ const Login = () => {
                 popupAnchor: [-3, -76]
             });
 
-            L.marker([camera.coordenades.lat, camera.coordenades.lng], {icon: cameraIcon}).addTo(mapa).on('click', () => console.log('Test'));
+            L.marker([camera.coordenades.lat, camera.coordenades.lng], {icon: cameraIcon}).addTo(mapa).on('click', () => {
+                
+                console.log('Test');
+                
+            });
 
         });
         

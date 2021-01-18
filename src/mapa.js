@@ -1,3 +1,5 @@
+import cameres from './src/cameres.js';
+
 // Agafar la referència del mapa de Catalunya
 var element = document.getElementById('mapa-catalunya');
 
@@ -20,5 +22,16 @@ var marcador = L.latLng('41.39576618797968', '2.173775823753265');
 // Seleccionem el marcador amb zoom de 25
 mapa.setView(marcador, 25);
 
-// Afegim el marcador al mapa i obrir finestra al fer clic
-L.marker(marcador).addTo(mapa).bindPopup("SCT, Diputació 355").openPopup();
+// Situar les càmeres en el mapa
+Object.values(cameres).forEach(camera => {
+    
+    var cameraIcon = L.icon({
+        iconUrl: './assets/camera_icon.png',
+        iconSize: [55, 55],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76]
+    });
+    
+    L.marker([camera.coordenades.lat, camera.coordenades.lng], {icon: cameraIcon}).addTo(mapa);
+
+});

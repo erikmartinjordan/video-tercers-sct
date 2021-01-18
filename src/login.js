@@ -20,6 +20,8 @@ const Login = () => {
             
         }*/
         
+        setAuth(true);
+        
     }
 
     return(

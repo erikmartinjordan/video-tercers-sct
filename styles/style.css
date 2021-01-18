@@ -62,3 +62,11 @@ button{
     margin: auto;
     width: 70px;
 }
+/*
+*
+* mapa.js
+*
+*/
+.leaflet-container a{
+    font-size: x-small;
+}

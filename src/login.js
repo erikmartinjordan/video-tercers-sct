@@ -1,4 +1,5 @@
-import config from './src/config.js';
+import config  from './src/config.js';
+import cameres from './src/cameres.js';
 
 const Login = () => {
     
@@ -6,11 +7,26 @@ const Login = () => {
     const [user, setUser] = React.useState(null);
     const [pass, setPass] = React.useState(null);
     
+    const placeCams = () => {
+                
+        Object.values(cameres).forEach(camera => {
+
+            var cameraIcon = L.icon({
+                iconUrl: './assets/camera_icon.png',
+                iconSize: [55, 55],
+                iconAnchor: [22, 94],
+                popupAnchor: [-3, -76]
+            });
+
+            L.marker([camera.coordenades.lat, camera.coordenades.lng], {icon: cameraIcon}).addTo(mapa).on('click', () => console.log('Test'));
+
+        });
+        
+    }
+    
     const validate = async () => {
         
         let { address, port } = config[user];
-        
-        console.log(address, port);
         
         /*let res = await fetch(`http://${user}:${password}@${address}:${port}/set?operation=status`);
         
@@ -18,9 +34,10 @@ const Login = () => {
             
             setAuth(true);
             
-        }*/
+        }*/        
         
         setAuth(true);
+        placeCams();
         
     }
 

@@ -1,5 +1,5 @@
-const { app, BrowserWindow, dialog } = require('electron');
-const { spawn }                      = require('child_process');
+const { app, BrowserWindow, dialog, ipcMain } = require('electron');
+const { spawn }                               = require('child_process');
 
 require('electron-reload')(__dirname);
 
@@ -33,11 +33,11 @@ async function disconnectCamera (user, password, address, port, num_camera) {
     
 }
 
-function launchVLC (rtsp_link) {
+ipcMain.handle('launchVLC', async (e, rtsp) => {
     
     const path = 'C:\\Program Files\\VideoLAN\\VLC\\vlc.exe';
      
-    const proc = spawn(`"${path}"`, [`http://46.16.226.181:88/?action=stream`], { shell: true });
+    const proc = spawn(`"${path}"`, [`${rtsp}`], { shell: true });
 
     proc.stdout.on('data', function (data) {
         
@@ -52,7 +52,7 @@ function launchVLC (rtsp_link) {
         
     });
 
-}
+});
 
 app.whenReady().then(createWindow);
 

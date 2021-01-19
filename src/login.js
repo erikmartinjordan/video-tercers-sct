@@ -1,5 +1,6 @@
-import config  from './src/config.js';
-import cameres from './src/cameres.js';
+const { ipcRenderer } = require('electron')
+import config          from './src/config.js';
+import cameres         from './src/cameres.js';
 
 const Login = () => {
     
@@ -8,21 +9,28 @@ const Login = () => {
     const [pass, setPass] = React.useState(null);
     
     const placeCams = () => {
-        
-        console.log(Object.values(cameres));
                 
         Object.values(cameres).forEach(camera => {
 
             var cameraIcon = L.icon({
+                
                 iconUrl: './assets/camera_icon.png',
                 iconSize: [55, 55],
                 iconAnchor: [22, 94],
                 popupAnchor: [-3, -76]
+                
             });
 
-            L.marker([camera.coordenades.lat, camera.coordenades.lng], {icon: cameraIcon}).addTo(mapa).on('click', () => {
+            L.marker([camera.coordenades.lat, camera.coordenades.lng], {icon: cameraIcon}).addTo(mapa).on('click', async () => {
                 
-                console.log('Test');
+                let rtsp = `http://46.16.226.181:88/?action=stream`; 
+                
+                // let { address, port } = config[user];
+                // let sct_rtsp = `rtsp://${address}:9001/output1.sdp`;
+                // Aquí he de fer la petició de connexió de la càmera -> connectCamera(user, pass, addr, port, camera)
+                // Aquí de invocar a VLC per poder reproduir les imatges -> openVLC(rtsp)
+                
+                await ipcRenderer.invoke('launchVLC', rtsp);
                 
             });
 

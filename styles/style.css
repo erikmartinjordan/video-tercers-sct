@@ -63,6 +63,13 @@ button{
     margin: auto;
     width: 70px;
 }
+.Login .Error{
+    color: red;
+    font-size: small;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 /*
 *
 * mapa.js

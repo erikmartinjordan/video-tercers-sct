@@ -4,13 +4,32 @@ import cameres         from './src/cameres.js';
 
 const Login = () => {
     
-    const [auth, setAuth] = React.useState(false);
-    const [user, setUser] = React.useState(null);
-    const [pass, setPass] = React.useState(null);
+    const [auth, setAuth]   = React.useState(false);
+    const [error, setError] = React.useState(null);
+    const [user, setUser]   = React.useState(null);
+    const [pass, setPass]   = React.useState(null);
+    
+    const connectCamera = async (user, pass, address, port, camera) => {
+        
+        let url = `http://${address}:${port}/set?operation=connect&output=1&camera=camera.${camera}`;
+        
+        let res = await fetch(url, {headers: {'Authorization': 'Basic ' +  btoa(user + ":" + pass) }}); 
+        
+        if(res.ok){
+            
+            let rtsp = `rtsp://${address}:9001/output1.sdp`;
+            
+            await ipcRenderer.invoke('launchVLC', rtsp);
+            
+        }
+        
+        
+    }
+
     
     const placeCams = () => {
                 
-        Object.values(cameres).forEach(camera => {
+        Object.entries(cameres).forEach(([id, camera]) => {
 
             var cameraIcon = L.icon({
                 
@@ -23,14 +42,9 @@ const Login = () => {
 
             L.marker([camera.coordenades.lat, camera.coordenades.lng], {icon: cameraIcon}).addTo(mapa).on('click', async () => {
                 
-                let rtsp = `http://46.16.226.181:88/?action=stream`; 
+                let { address, port } = config[user];
                 
-                // let { address, port } = config[user];
-                // let sct_rtsp = `rtsp://${address}:9001/output1.sdp`;
-                // Aquí he de fer la petició de connexió de la càmera -> connectCamera(user, pass, addr, port, camera)
-                // Aquí de invocar a VLC per poder reproduir les imatges -> openVLC(rtsp)
-                
-                await ipcRenderer.invoke('launchVLC', rtsp);
+                connectCamera(user, pass, address, port, id);
                 
             });
 
@@ -42,16 +56,22 @@ const Login = () => {
         
         let { address, port } = config[user];
         
-        /*let res = await fetch(`http://${user}:${password}@${address}:${port}/set?operation=status`);
+        let url = `http://${address}:${port}/set?operation=status`;
+        
+        let res = await fetch(url, {headers: {'Authorization': 'Basic ' +  btoa(user + ":" + pass) }});
         
         if(res.ok){
             
             setAuth(true);
+            placeCams();
             
-        }*/        
+        }
+        else{
+            
+            setError('Usuari o contrasenya incorrecte');
+            
+        }
         
-        setAuth(true);
-        placeCams();
         
     }
 
@@ -63,8 +83,9 @@ const Login = () => {
                     <img src = {'./assets/sct_logo.png'}></img>
                     <p>Si us plau, identifíca't per poder utilitzar l'aplicació de vídeo a tercers del Servei Català del Trànsit:</p>
                     <input onChange = {(e) => setUser(e.target.value)} placeholder = 'Usuari'></input>
-                    <input onChange = {(e) => setPass(e.target.value)} placeholder = 'Contrasenya'></input>
+                    <input onChange = {(e) => setPass(e.target.value)} placeholder = 'Contrasenya' type = 'password'></input>
                     <button onClick = {validate}>Accedeix</button>
+                    <span className = 'Error'>{error}</span>
                 </div>
               </div>
             : null                

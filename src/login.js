@@ -4,39 +4,42 @@ import cameres         from './src/cameres.js';
 
 const Login = () => {
     
-    const [auth, setAuth]   = React.useState(false);
-    const [error, setError] = React.useState(null);
-    const [user, setUser]   = React.useState(null);
-    const [pass, setPass]   = React.useState(null);
+    const [auth, setAuth]     = React.useState(false);
+    const [error, setError]   = React.useState(null);
+    const [user, setUser]     = React.useState(null);
+    const [pass, setPass]     = React.useState(null);
+    const [output, setOutput] = React.useState(1);
     
     const connectCamera = async (user, pass, address, port, camera) => {
         
-        let url = `http://${address}:${port}/set?operation=connect&output=1&camera=camera.${camera}`;
+        let url = `http://${address}:${port}/set?operation=connect&output=${output}&camera=camera.${camera}`;
         
         let res = await fetch(url, {headers: {'Authorization': 'Basic ' +  btoa(user + ":" + pass) }}); 
         
         if(res.ok){
             
-            let rtsp = `rtsp://${address}:9001/output1.sdp`;
+            let { rtsp_ports } = config[user];
+            
+            let rtsp = `rtsp://${address}:${rtsp_ports[output - 1]}/output${output}.sdp`;
             
             await ipcRenderer.invoke('launchVLC', rtsp);
             
+            setOutput(output => (output + 1) % rtsp_ports.length);
+            
         }
         
-        
     }
-
     
     const placeCams = () => {
                 
         Object.entries(cameres).forEach(([id, camera]) => {
 
-            var cameraIcon = L.icon({
-                
-                iconUrl: './assets/camera_icon.png',
-                iconSize: [55, 55],
-                iconAnchor: [22, 94],
-                popupAnchor: [-3, -76]
+            var cameraIcon = L.divIcon({
+
+                html: `<div class = 'Icon'>
+                            <img src = './assets/camera_icon.png'/>
+                            <div class = 'Number'>${id}</div>
+                       </div>`
                 
             });
 
@@ -71,7 +74,6 @@ const Login = () => {
             setError('Usuari o contrasenya incorrecte');
             
         }
-        
         
     }
 

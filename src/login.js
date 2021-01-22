@@ -55,7 +55,9 @@ const Login = () => {
         
     }
     
-    const validate = async () => {
+    const validate = async (e) => {
+        
+        e.preventDefault();
         
         let { address, port } = config[user];
         
@@ -84,9 +86,11 @@ const Login = () => {
                 <div className = 'Login-Wrapper'>
                     <img src = {'./assets/sct_logo.png'}></img>
                     <p>Si us plau, identifíca't per poder utilitzar l'aplicació de vídeo a tercers del Servei Català del Trànsit:</p>
-                    <input onChange = {(e) => setUser(e.target.value)} placeholder = 'Usuari'></input>
-                    <input onChange = {(e) => setPass(e.target.value)} placeholder = 'Contrasenya' type = 'password'></input>
-                    <button onClick = {validate}>Accedeix</button>
+                    <form onSubmit = {validate}>
+                        <input onChange = {(e) => setUser(e.target.value)} placeholder = 'Usuari'></input>
+                        <input onChange = {(e) => setPass(e.target.value)} placeholder = 'Contrasenya' type = 'password'></input>
+                        <button type = 'submit'>Accedeix</button>
+                    </form>
                     <span className = 'Error'>{error}</span>
                 </div>
               </div>

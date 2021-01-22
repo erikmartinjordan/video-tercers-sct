@@ -72,6 +72,10 @@ button{
     max-width: 400px;
     padding: 20px;
 }
+.Login-Wrapper form{
+    display: flex;
+    flex-direction: column;
+}
 .Login-Wrapper input{
     background: lightGray;
     border: none;

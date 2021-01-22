@@ -10,6 +10,7 @@ function createWindow () {
         width: 800,
         height: 600,
         icon: __dirname + '/assets/camera_icon.png',
+        title: 'Aplicació de vídeo a tercers del Servei Català del Trànsit',
         webPreferences: {
             
           nodeIntegration: true
@@ -19,6 +20,8 @@ function createWindow () {
     });
 
     win.loadFile('index.html');
+    
+    win.setMenuBarVisibility(false);
     
 }
 

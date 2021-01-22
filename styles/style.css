@@ -96,6 +96,44 @@ button{
     margin-bottom: 10px;
     margin-top: 10px;
 }
+.Loader{
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 99999999999999;
+}
+.Loader .Loader-Wrapper{
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.Loader .Circle{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    padding: 0px;
+    border-radius: 100%;
+    border: 5px solid;
+    border-top-color: rgba(254, 168, 23, 0.65);
+    border-bottom-color: rgba(57, 154, 219, 0.65);
+    border-left-color: rgba(188, 84, 93, 0.95);
+    border-right-color: rgba(137, 188, 79, 0.95);
+    animation: loader 2s ease-in-out infinite alternate;   
+}
+@keyframes loader{
+    0%   {transform: rotate(0deg);}
+	100% {transform: rotate(720deg);}
+}
 /*
 *
 * mapa.js

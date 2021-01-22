@@ -4,27 +4,33 @@ import cameres         from './src/cameres.js';
 
 const Login = () => {
     
-    const [auth, setAuth]     = React.useState(false);
-    const [error, setError]   = React.useState(null);
-    const [user, setUser]     = React.useState(null);
-    const [pass, setPass]     = React.useState(null);
-    const [output, setOutput] = React.useState(1);
+    const [auth, setAuth]    = React.useState(false);
+    const [error, setError]  = React.useState(null);
+    const [user, setUser]    = React.useState(null);
+    const [pass, setPass]    = React.useState(null);
+    const [vlc, setVlc]      = React.useState(null);
     
     const connectCamera = async (user, pass, address, port, camera) => {
         
-        let url = `http://${address}:${port}/set?operation=connect&output=${output}&camera=camera.${camera}`;
+        let url = `http://${address}:${port}/set?operation=connect&output=1&camera=camera.${camera}`;
         
         let res = await fetch(url, {headers: {'Authorization': 'Basic ' +  btoa(user + ":" + pass) }}); 
         
         if(res.ok){
             
-            let { rtsp_ports } = config[user];
+            setVlc('loading');
             
-            let rtsp = `rtsp://${address}:${rtsp_ports[output - 1]}/output${output}.sdp`;
+            setTimeout(async () => {
+                
+                let { rtsp_ports } = config[user];
             
-            await ipcRenderer.invoke('launchVLC', rtsp);
-            
-            setOutput(output => (output + 1) % rtsp_ports.length);
+                let rtsp = `rtsp://${address}:${rtsp_ports[0]}/output1.sdp`;
+
+                await ipcRenderer.invoke('launchVLC', rtsp);
+                
+                setVlc('launched');
+                
+            }, 3000);
             
         }
         
@@ -95,6 +101,15 @@ const Login = () => {
                 </div>
               </div>
             : null                
+            }
+            { vlc === 'loading'
+            ? <div className = 'Loader'>
+                <div className = 'Loader-Wrapper'>
+                    <p>Carregant vídeo...</p>
+                    <div className = 'Circle'></div>
+                </div>
+              </div>
+            : null
             }
         </React.Fragment>
     );

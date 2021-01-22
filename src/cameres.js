@@ -1,1292 +1,5 @@
 export default {
-  "1": {
-    "carretera": "B-20",
-    "pk": 15.63,
-    "coordenades": {
-      "lat": 41.446203,
-      "lng": 2.180832
-    }
-  },
-  "2": {
-    "carretera": "B-20",
-    "pk": 14.9,
-    "coordenades": {
-      "lat": 41.442778,
-      "lng": 2.169794
-    }
-  },
-  "3": {
-    "carretera": "B-20",
-    "pk": 13.32,
-    "coordenades": {
-      "lat": 41.439655,
-      "lng": 2.161627
-    }
-  },
-  "4": {
-    "carretera": "B-20",
-    "pk": 12.34,
-    "coordenades": {
-      "lat": 41.437805,
-      "lng": 2.151475
-    }
-  },
-  "5": {
-    "carretera": "B-20",
-    "pk": 11.45,
-    "coordenades": {
-      "lat": 41.43198,
-      "lng": 2.145488
-    }
-  },
-  "6": {
-    "carretera": "B-20",
-    "pk": 10.6,
-    "coordenades": {
-      "lat": 41.42474,
-      "lng": 2.142111
-    }
-  },
-  "7": {
-    "carretera": "B-20",
-    "pk": 9.55,
-    "coordenades": {
-      "lat": 41.415867,
-      "lng": 2.13768
-    }
-  },
-  "8": {
-    "carretera": "B-20",
-    "pk": 8.4,
-    "coordenades": {
-      "lat": 41.410469,
-      "lng": 2.126066
-    }
-  },
-  "9": {
-    "carretera": "B-20",
-    "pk": 7.47,
-    "coordenades": {
-      "lat": 41.404537,
-      "lng": 2.117397
-    }
-  },
-  "10": {
-    "carretera": "B-20",
-    "pk": 7.42,
-    "coordenades": {
-      "lat": 41.4049,
-      "lng": 2.117776
-    }
-  },
-  "11": {
-    "carretera": "B-20",
-    "pk": 5.42,
-    "coordenades": {
-      "lat": 41.38855,
-      "lng": 2.107221
-    }
-  },
-  "12": {
-    "carretera": "B-20",
-    "pk": 4.6,
-    "coordenades": {
-      "lat": 41.382568,
-      "lng": 2.102458
-    }
-  },
-  "13": {
-    "carretera": "C-32",
-    "pk": 62.3,
-    "coordenades": {
-      "lat": 41.376705,
-      "lng": 2.095725
-    }
-  },
-  "14": {
-    "carretera": "C-32",
-    "pk": 59.5,
-    "coordenades": {
-      "lat": 41.3519381,
-      "lng": 2.091753149
-    }
-  },
-  "15": {
-    "carretera": "B-10",
-    "pk": 21.35,
-    "coordenades": {
-      "lat": 41.345135,
-      "lng": 2.089449
-    }
-  },
-  "16": {
-    "carretera": "B-10",
-    "pk": 17.65,
-    "coordenades": {
-      "lat": 41.340019,
-      "lng": 2.118087
-    }
-  },
-  "17": {
-    "carretera": "B-10",
-    "pk": 16.57,
-    "coordenades": {
-      "lat": 41.343418,
-      "lng": 2.131012
-    }
-  },
-  "18": {
-    "carretera": "B-10",
-    "pk": 15.19,
-    "coordenades": {
-      "lat": 41.34927,
-      "lng": 2.146719
-    }
-  },
-  "19": {
-    "carretera": "B-10",
-    "pk": 14.3,
-    "coordenades": {
-      "lat": 41.35302,
-      "lng": 2.157824
-    }
-  },
-  "20": {
-    "carretera": "B-10",
-    "pk": 12.19,
-    "coordenades": {
-      "lat": 41.365719,
-      "lng": 2.171482
-    }
-  },
-  "21": {
-    "carretera": "B-10",
-    "pk": 10.69,
-    "coordenades": {
-      "lat": 41.378082,
-      "lng": 2.180311
-    }
-  },
-  "22": {
-    "carretera": "B-10",
-    "pk": 9.45,
-    "coordenades": {
-      "lat": 41.384521,
-      "lng": 2.191496
-    }
-  },
-  "23": {
-    "carretera": "B-10",
-    "pk": 8.92,
-    "coordenades": {
-      "lat": 41.387955,
-      "lng": 2.195745
-    }
-  },
-  "24": {
-    "carretera": "B-10",
-    "pk": 7.99,
-    "coordenades": {
-      "lat": 41.393017,
-      "lng": 2.202987
-    }
-  },
-  "25": {
-    "carretera": "B-10",
-    "pk": 6.7,
-    "coordenades": {
-      "lat": 41.401505,
-      "lng": 2.212235
-    }
-  },
-  "26": {
-    "carretera": "B-10",
-    "pk": 5.8,
-    "coordenades": {
-      "lat": 41.406498,
-      "lng": 2.219024
-    }
-  },
-  "27": {
-    "carretera": "B-10",
-    "pk": 4.3,
-    "coordenades": {
-      "lat": 41.41864,
-      "lng": 2.22522
-    }
-  },
-  "28": {
-    "carretera": "B-10",
-    "pk": 2.6,
-    "coordenades": {
-      "lat": 41.429432,
-      "lng": 2.213262
-    }
-  },
-  "29": {
-    "carretera": "B-10",
-    "pk": 0.76,
-    "coordenades": {
-      "lat": 41.443405,
-      "lng": 2.206527
-    }
-  },
-  "30": {
-    "carretera": "B-10",
-    "pk": 0,
-    "coordenades": {
-      "lat": 41.448547,
-      "lng": 2.20174
-    }
-  },
-  "31": {
-    "carretera": "B-10",
-    "pk": 0,
-    "coordenades": {
-      "lat": 41.45259667,
-      "lng": 2.195275688
-    }
-  },
-  "32": {
-    "carretera": "B-10",
-    "pk": 13,
-    "coordenades": {
-      "lat": 41.359909,
-      "lng": 2.165629
-    }
-  },
-  "33": {
-    "carretera": "B-10",
-    "pk": 11.6,
-    "coordenades": {
-      "lat": 41.370083,
-      "lng": 2.174089
-    }
-  },
-  "101": {
-    "carretera": "T-11",
-    "pk": 18,
-    "coordenades": {
-      "lat": 41.118656,
-      "lng": 1.233719
-    }
-  },
-  "102": {
-    "carretera": "T-11",
-    "pk": 10,
-    "coordenades": {
-      "lat": 41.136158,
-      "lng": 1.146697
-    }
-  },
-  "201": {
-    "carretera": "AP-2",
-    "pk": 232.1,
-    "coordenades": {
-      "lat": 41.269943,
-      "lng": 1.531828
-    }
-  },
-  "202": {
-    "carretera": "AP-2",
-    "pk": 202.7,
-    "coordenades": {
-      "lat": 41.392752,
-      "lng": 1.275207
-    }
-  },
-  "203": {
-    "carretera": "AP-2",
-    "pk": 193,
-    "coordenades": {
-      "lat": 41.389824,
-      "lng": 1.168259
-    }
-  },
-  "204": {
-    "carretera": "AP-2",
-    "pk": 178.7,
-    "coordenades": {
-      "lat": 41.418493,
-      "lng": 9.79923
-    }
-  },
-  "205": {
-    "carretera": "AP-2",
-    "pk": 174.2,
-    "coordenades": {
-      "lat": 41.430758,
-      "lng": 9.31188
-    }
-  },
-  "206": {
-    "carretera": "AP-2",
-    "pk": 160.8,
-    "coordenades": {
-      "lat": 41.502187,
-      "lng": 8.46531
-    }
-  },
-  "207": {
-    "carretera": "AP-2",
-    "pk": 140.2,
-    "coordenades": {
-      "lat": 41.549023,
-      "lng": 6.24323
-    }
-  },
-  "208": {
-    "carretera": "AP-2",
-    "pk": 127.3,
-    "coordenades": {
-      "lat": 41.541496,
-      "lng": 4.85439
-    }
-  },
-  "209": {
-    "carretera": "AP-2",
-    "pk": 114.2,
-    "coordenades": {
-      "lat": 41.490751,
-      "lng": 3.53829
-    }
-  },
-  "701": {
-    "carretera": "A-9",
-    "pk": 271.8,
-    "coordenades": {
-      "lat": 42.529067,
-      "lng": 2.82174
-    }
-  },
-  "702": {
-    "carretera": "A-9",
-    "pk": 276.5,
-    "coordenades": {
-      "lat": 42.478778,
-      "lng": 2.847277
-    }
-  },
-  "703": {
-    "carretera": "A-9",
-    "pk": 278.5,
-    "coordenades": {
-      "lat": 42.478778,
-      "lng": 2.847277
-    }
-  },
-  "704": {
-    "carretera": "A-9",
-    "pk": 279,
-    "coordenades": {
-      "lat": 43.487198,
-      "lng": 3.707801
-    }
-  },
-  "705": {
-    "carretera": "AP-7",
-    "pk": 0,
-    "coordenades": {
-      "lat": 42.464674,
-      "lng": 2.865541
-    }
-  },
-  "706": {
-    "carretera": "AP-7",
-    "pk": 1.8,
-    "coordenades": {
-      "lat": 42.455709,
-      "lng": 2.866495
-    }
-  },
-  "707": {
-    "carretera": "AP-7",
-    "pk": 3.5,
-    "coordenades": {
-      "lat": 42.438318,
-      "lng": 2.865884
-    }
-  },
-  "708": {
-    "carretera": "AP-7",
-    "pk": 6.5,
-    "coordenades": {
-      "lat": 42.413015,
-      "lng": 2.872182
-    }
-  },
-  "709": {
-    "carretera": "AP-7",
-    "pk": 8.8,
-    "coordenades": {
-      "lat": 42.395962,
-      "lng": 2.878154
-    }
-  },
-  "710": {
-    "carretera": "AP-7",
-    "pk": 15.4,
-    "coordenades": {
-      "lat": 42.34262,
-      "lng": 2.919054
-    }
-  },
-  "711": {
-    "carretera": "AP-7",
-    "pk": 20,
-    "coordenades": {
-      "lat": 42.303979,
-      "lng": 2.945308
-    }
-  },
-  "712": {
-    "carretera": "AP-7",
-    "pk": 23.85,
-    "coordenades": {
-      "lat": 42.277701,
-      "lng": 2.94054
-    }
-  },
-  "713": {
-    "carretera": "AP-7",
-    "pk": 29,
-    "coordenades": {
-      "lat": 42.225519,
-      "lng": 2.93863
-    }
-  },
-  "714": {
-    "carretera": "AP-7",
-    "pk": 32,
-    "coordenades": {
-      "lat": 42.199483,
-      "lng": 2.934236
-    }
-  },
-  "715": {
-    "carretera": "AP-7",
-    "pk": 40.2,
-    "coordenades": {
-      "lat": 42.13213,
-      "lng": 2.913945
-    }
-  },
-  "716": {
-    "carretera": "AP-7",
-    "pk": 44.5,
-    "coordenades": {
-      "lat": 42.099839,
-      "lng": 2.900961
-    }
-  },
-  "717": {
-    "carretera": "AP-7",
-    "pk": 49.8,
-    "coordenades": {
-      "lat": 42.057979,
-      "lng": 2.882902
-    }
-  },
-  "718": {
-    "carretera": "AP-7",
-    "pk": 55,
-    "coordenades": {
-      "lat": 42.028861,
-      "lng": 2.827335
-    }
-  },
-  "719": {
-    "carretera": "AP-7",
-    "pk": 60.8,
-    "coordenades": {
-      "lat": 41.993406,
-      "lng": 2.792947
-    }
-  },
-  "720": {
-    "carretera": "AP-7",
-    "pk": 64,
-    "coordenades": {
-      "lat": 41.96119,
-      "lng": 2.782086
-    }
-  },
-  "721": {
-    "carretera": "AP-7",
-    "pk": 71.6,
-    "coordenades": {
-      "lat": 41.901976,
-      "lng": 2.773923
-    }
-  },
-  "722": {
-    "carretera": "AP-7",
-    "pk": 79.3,
-    "coordenades": {
-      "lat": 41.834992,
-      "lng": 2.749286
-    }
-  },
-  "723": {
-    "carretera": "AP-7",
-    "pk": 84.6,
-    "coordenades": {
-      "lat": 41.782029,
-      "lng": 2.743738
-    }
-  },
-  "724": {
-    "carretera": "AP-7",
-    "pk": 87,
-    "coordenades": {
-      "lat": 41.766452,
-      "lng": 2.732642
-    }
-  },
-  "725": {
-    "carretera": "AP-7",
-    "pk": 89.7,
-    "coordenades": {
-      "lat": 41.756936,
-      "lng": 2.712442
-    }
-  },
-  "726": {
-    "carretera": "AP-7",
-    "pk": 95.4,
-    "coordenades": {
-      "lat": 41.742001,
-      "lng": 2.647226
-    }
-  },
-  "727": {
-    "carretera": "AP-7",
-    "pk": 100.8,
-    "coordenades": {
-      "lat": 41.725899,
-      "lng": 2.595208
-    }
-  },
-  "728": {
-    "carretera": "AP-7",
-    "pk": 107.2,
-    "coordenades": {
-      "lat": 41.702267,
-      "lng": 2.519059
-    }
-  },
-  "729": {
-    "carretera": "AP-7",
-    "pk": 111.5,
-    "coordenades": {
-      "lat": 41.676344,
-      "lng": 2.486438
-    }
-  },
-  "730": {
-    "carretera": "AP-7",
-    "pk": 117.4,
-    "coordenades": {
-      "lat": 41.647864,
-      "lng": 2.427144
-    }
-  },
-  "731": {
-    "carretera": "AP-7",
-    "pk": 123,
-    "coordenades": {
-      "lat": 41.624287,
-      "lng": 2.3644
-    }
-  },
-  "732": {
-    "carretera": "AP-7",
-    "pk": 125,
-    "coordenades": {
-      "lat": 41.611887,
-      "lng": 2.34735
-    }
-  },
-  "733": {
-    "carretera": "AP-7",
-    "pk": 128,
-    "coordenades": {
-      "lat": 41.591677,
-      "lng": 2.308776
-    }
-  },
-  "734": {
-    "carretera": "AP-7",
-    "pk": 130.3,
-    "coordenades": {
-      "lat": 41.583743,
-      "lng": 2.297285
-    }
-  },
-  "735": {
-    "carretera": "AP-7",
-    "pk": 133,
-    "coordenades": {
-      "lat": 41.566778,
-      "lng": 2.278098
-    }
-  },
-  "736": {
-    "carretera": "AP-7",
-    "pk": 136.6,
-    "coordenades": {
-      "lat": 41.521225,
-      "lng": 2.157656
-    }
-  },
-  "737": {
-    "carretera": "AP-7",
-    "pk": 138.5,
-    "coordenades": {
-      "lat": 41.549052,
-      "lng": 2.221524
-    }
-  },
-  "738": {
-    "carretera": "AP-7",
-    "pk": 139.65,
-    "coordenades": {
-      "lat": 41.550021,
-      "lng": 2.215668
-    }
-  },
-  "739": {
-    "carretera": "AP-7",
-    "pk": 141.43,
-    "coordenades": {
-      "lat": 41.544953,
-      "lng": 2.192988
-    }
-  },
-  "740": {
-    "carretera": "AP-7",
-    "pk": 143.715,
-    "coordenades": {
-      "lat": 41.536871,
-      "lng": 2.172302
-    }
-  },
-  "741": {
-    "carretera": "AP-7",
-    "pk": 145.65,
-    "coordenades": {
-      "lat": 41.522008,
-      "lng": 2.160674
-    }
-  },
-  "742": {
-    "carretera": "AP-7",
-    "pk": 146.5,
-    "coordenades": {
-      "lat": 41.51590907,
-      "lng": 2.145709273
-    }
-  },
-  "743": {
-    "carretera": "AP-7",
-    "pk": 147,
-    "coordenades": {
-      "lat": 41.512239,
-      "lng": 2.140957
-    }
-  },
-  "744": {
-    "carretera": "B-30",
-    "pk": 11.2,
-    "coordenades": {
-      "lat": 41.5088522,
-      "lng": 2.132994071
-    }
-  },
-  "745": {
-    "carretera": "B-30",
-    "pk": 9.7,
-    "coordenades": {
-      "lat": 41.50097303,
-      "lng": 2.117889296
-    }
-  },
-  "746": {
-    "carretera": "B-30",
-    "pk": 8.2,
-    "coordenades": {
-      "lat": 41.49358427,
-      "lng": 2.103748637
-    }
-  },
-  "747": {
-    "carretera": "AP-7",
-    "pk": 151.6,
-    "coordenades": {
-      "lat": 41.49126139,
-      "lng": 2.093800285
-    }
-  },
-  "748": {
-    "carretera": "B-30",
-    "pk": 152.7,
-    "coordenades": {
-      "lat": 41.48787824,
-      "lng": 2.082942728
-    }
-  },
-  "749": {
-    "carretera": "B-30",
-    "pk": 153.3,
-    "coordenades": {
-      "lat": 41.48818718,
-      "lng": 2.075724848
-    }
-  },
-  "750": {
-    "carretera": "AP-7",
-    "pk": 153.7,
-    "coordenades": {
-      "lat": 41.485473,
-      "lng": 2.043252
-    }
-  },
-  "751": {
-    "carretera": "B-30",
-    "pk": 5,
-    "coordenades": {
-      "lat": 41.48977893,
-      "lng": 2.067509366
-    }
-  },
-  "752": {
-    "carretera": "B-30",
-    "pk": 4.4,
-    "coordenades": {
-      "lat": 41.48959466,
-      "lng": 2.05949544
-    }
-  },
-  "753": {
-    "carretera": "B-30",
-    "pk": 3.4,
-    "coordenades": {
-      "lat": 41.484928,
-      "lng": 2.049162
-    }
-  },
-  "754": {
-    "carretera": "B-30",
-    "pk": 1.8,
-    "coordenades": {
-      "lat": 41.47485,
-      "lng": 2.040423
-    }
-  },
-  "755": {
-    "carretera": "AP-7",
-    "pk": 158.9,
-    "coordenades": {
-      "lat": 41.485473,
-      "lng": 2.043252
-    }
-  },
-  "756": {
-    "carretera": "AP-7",
-    "pk": 159.815,
-    "coordenades": {
-      "lat": 41.485473,
-      "lng": 2.043252
-    }
-  },
-  "760": {
-    "carretera": "AP-7",
-    "pk": 161.7,
-    "coordenades": {
-      "lat": 41.468305,
-      "lng": 2.033615
-    }
-  },
-  "761": {
-    "carretera": "AP-7",
-    "pk": 164.965,
-    "coordenades": {
-      "lat": 41.44636695,
-      "lng": 1.995052207
-    }
-  },
-  "762": {
-    "carretera": "AP-7",
-    "pk": 166.6,
-    "coordenades": {
-      "lat": 41.46358228,
-      "lng": 1.980313846
-    }
-  },
-  "763": {
-    "carretera": "AP-7",
-    "pk": 168.112,
-    "coordenades": {
-      "lat": 41.47024856,
-      "lng": 1.964915568
-    }
-  },
-  "764": {
-    "carretera": "AP-7",
-    "pk": 169.722,
-    "coordenades": {
-      "lat": 41.4702643,
-      "lng": 1.946939322
-    }
-  },
-  "765": {
-    "carretera": "AP-7",
-    "pk": 171.2,
-    "coordenades": {
-      "lat": 41.47192031,
-      "lng": 1.92880172
-    }
-  },
-  "766": {
-    "carretera": "AP-7",
-    "pk": 171.19,
-    "coordenades": {
-      "lat": 41.46660115,
-      "lng": 1.915627132
-    }
-  },
-  "767": {
-    "carretera": "AP-7",
-    "pk": 173.9,
-    "coordenades": {
-      "lat": 41.445663,
-      "lng": 1.864617
-    }
-  },
-  "768": {
-    "carretera": "AP-7",
-    "pk": 176.7,
-    "coordenades": {
-      "lat": 41.429287,
-      "lng": 1.83596
-    }
-  },
-  "769": {
-    "carretera": "AP-7",
-    "pk": 182.8,
-    "coordenades": {
-      "lat": 41.422393,
-      "lng": 1.817945
-    }
-  },
-  "770": {
-    "carretera": "AP-7",
-    "pk": 188.8,
-    "coordenades": {
-      "lat": 41.419475,
-      "lng": 1.798057
-    }
-  },
-  "771": {
-    "carretera": "AP-7",
-    "pk": 186.7,
-    "coordenades": {
-      "lat": 41.394297,
-      "lng": 1.767039
-    }
-  },
-  "772": {
-    "carretera": "AP-7",
-    "pk": 190.4,
-    "coordenades": {
-      "lat": 41.379445,
-      "lng": 1.736851
-    }
-  },
-  "773": {
-    "carretera": "AP-7",
-    "pk": 193.5,
-    "coordenades": {
-      "lat": 41.35598,
-      "lng": 1.723436
-    }
-  },
-  "774": {
-    "carretera": "AP-7",
-    "pk": 195.5,
-    "coordenades": {
-      "lat": 41.333082,
-      "lng": 1.712404
-    }
-  },
-  "775": {
-    "carretera": "AP-7",
-    "pk": 197.5,
-    "coordenades": {
-      "lat": 41.348473,
-      "lng": 1.718183
-    }
-  },
-  "776": {
-    "carretera": "AP-7",
-    "pk": 200,
-    "coordenades": {
-      "lat": 41.327862,
-      "lng": 1.686569
-    }
-  },
-  "777": {
-    "carretera": "AP-7",
-    "pk": 204.25,
-    "coordenades": {
-      "lat": 41.310675,
-      "lng": 1.624089
-    }
-  },
-  "778": {
-    "carretera": "AP-7",
-    "pk": 208.5,
-    "coordenades": {
-      "lat": 41.271523,
-      "lng": 1.527966
-    }
-  },
-  "779": {
-    "carretera": "AP-7",
-    "pk": 212,
-    "coordenades": {
-      "lat": 41.269276,
-      "lng": 1.547732
-    }
-  },
-  "780": {
-    "carretera": "AP-7",
-    "pk": 217,
-    "coordenades": {
-      "lat": 41.23073,
-      "lng": 1.526655
-    }
-  },
-  "781": {
-    "carretera": "AP-7",
-    "pk": 218.6,
-    "coordenades": {
-      "lat": 41.219401,
-      "lng": 1.515465
-    }
-  },
-  "782": {
-    "carretera": "AP-7",
-    "pk": 220.5,
-    "coordenades": {
-      "lat": 41.26872,
-      "lng": 1.546049
-    }
-  },
-  "783": {
-    "carretera": "AP-7",
-    "pk": 224,
-    "coordenades": {
-      "lat": 41.183353,
-      "lng": 1.477082
-    }
-  },
-  "784": {
-    "carretera": "AP-7",
-    "pk": 225.8,
-    "coordenades": {
-      "lat": 41.181264,
-      "lng": 1.456243
-    }
-  },
-  "785": {
-    "carretera": "AP-7",
-    "pk": 233,
-    "coordenades": {
-      "lat": 41.15686,
-      "lng": 1.38146
-    }
-  },
-  "786": {
-    "carretera": "AP-7",
-    "pk": 242.4,
-    "coordenades": {
-      "lat": 41.143989,
-      "lng": 1.247406
-    }
-  },
-  "787": {
-    "carretera": "AP-7",
-    "pk": 244.73,
-    "coordenades": {
-      "lat": 41.160639,
-      "lng": 1.397167
-    }
-  },
-  "788": {
-    "carretera": "AP-7",
-    "pk": 247,
-    "coordenades": {
-      "lat": 41.159988,
-      "lng": 1.392447
-    }
-  },
-  "789": {
-    "carretera": "AP-7",
-    "pk": 249.5,
-    "coordenades": {
-      "lat": 41.163868,
-      "lng": 1.410253
-    }
-  },
-  "790": {
-    "carretera": "AP-7",
-    "pk": 251.6,
-    "coordenades": {
-      "lat": 41.116615,
-      "lng": 1.138995
-    }
-  },
-  "791": {
-    "carretera": "AP-7",
-    "pk": 254.11,
-    "coordenades": {
-      "lat": 41.116615,
-      "lng": 1.138995
-    }
-  },
-  "792": {
-    "carretera": "AP-7",
-    "pk": 257,
-    "coordenades": {
-      "lat": 41.1038,
-      "lng": 1.12081
-    }
-  },
-  "793": {
-    "carretera": "AP-7",
-    "pk": 258.9,
-    "coordenades": {
-      "lat": 41.116966,
-      "lng": 1.139922
-    }
-  },
-  "794": {
-    "carretera": "AP-7",
-    "pk": 263.9,
-    "coordenades": {
-      "lat": 41.081722,
-      "lng": 1.041001
-    }
-  },
-  "795": {
-    "carretera": "AP-7",
-    "pk": 265,
-    "coordenades": {
-      "lat": 41.082377,
-      "lng": 1.046505
-    }
-  },
-  "796": {
-    "carretera": "AP-7",
-    "pk": 266.8,
-    "coordenades": {
-      "lat": 41.082579,
-      "lng": 1.053704
-    }
-  },
-  "797": {
-    "carretera": "AP-7",
-    "pk": 270.8,
-    "coordenades": {
-      "lat": 41.059388,
-      "lng": 9.89442
-    }
-  },
-  "798": {
-    "carretera": "AP-7",
-    "pk": 274.8,
-    "coordenades": {
-      "lat": 41.055675,
-      "lng": 9.847
-    }
-  },
-  "799": {
-    "carretera": "AP-7",
-    "pk": 279.3,
-    "coordenades": {
-      "lat": 40.99554,
-      "lng": 9.07163
-    }
-  },
-  "800": {
-    "carretera": "AP-7",
-    "pk": 281,
-    "coordenades": {
-      "lat": 40.981367,
-      "lng": 8.87751
-    }
-  },
-  "801": {
-    "carretera": "AP-7",
-    "pk": 284.5,
-    "coordenades": {
-      "lat": 40.983424,
-      "lng": 8.91592
-    }
-  },
-  "802": {
-    "carretera": "AP-7",
-    "pk": 288,
-    "coordenades": {
-      "lat": 41.016072,
-      "lng": 9.07212
-    }
-  },
-  "803": {
-    "carretera": "AP-7",
-    "pk": 295.2,
-    "coordenades": {
-      "lat": 40.88213,
-      "lng": 7.94647
-    }
-  },
-  "804": {
-    "carretera": "AP-7",
-    "pk": 296.1,
-    "coordenades": {
-      "lat": 40.879453,
-      "lng": 7.9233
-    }
-  },
-  "805": {
-    "carretera": "AP-7",
-    "pk": 297,
-    "coordenades": {
-      "lat": 40.888676,
-      "lng": 8.01261
-    }
-  },
-  "806": {
-    "carretera": "AP-7",
-    "pk": 298.8,
-    "coordenades": {
-      "lat": 40.885975,
-      "lng": 7.98364
-    }
-  },
-  "807": {
-    "carretera": "AP-7",
-    "pk": 303.5,
-    "coordenades": {
-      "lat": 40.832994,
-      "lng": 7.39022
-    }
-  },
-  "808": {
-    "carretera": "AP-7",
-    "pk": 307.1,
-    "coordenades": {
-      "lat": 40.811253,
-      "lng": 7.00422
-    }
-  },
-  "809": {
-    "carretera": "AP-7",
-    "pk": 309,
-    "coordenades": {
-      "lat": 40.809369,
-      "lng": 6.97675
-    }
-  },
-  "810": {
-    "carretera": "AP-7",
-    "pk": 310.4,
-    "coordenades": {
-      "lat": 40.815761,
-      "lng": 7.11073
-    }
-  },
-  "811": {
-    "carretera": "AP-7",
-    "pk": 315.8,
-    "coordenades": {
-      "lat": 40.781521,
-      "lng": 6.47414
-    }
-  },
-  "812": {
-    "carretera": "AP-7",
-    "pk": 317.8,
-    "coordenades": {
-      "lat": 40.744731,
-      "lng": 5.93384
-    }
-  },
-  "813": {
-    "carretera": "AP-7",
-    "pk": 318.3,
-    "coordenades": {
-      "lat": 40.748356,
-      "lng": 5.9597
-    }
-  },
-  "814": {
-    "carretera": "AP-7",
-    "pk": 319,
-    "coordenades": {
-      "lat": 40.750616,
-      "lng": 5.98116
-    }
-  },
-  "815": {
-    "carretera": "AP-7",
-    "pk": 320.2,
-    "coordenades": {
-      "lat": 40.75386,
-      "lng": 6.0232
-    }
-  },
-  "816": {
-    "carretera": "AP-7",
-    "pk": 323,
-    "coordenades": {
-      "lat": 40.752559,
-      "lng": 6.00687
-    }
-  },
-  "817": {
-    "carretera": "AP-7",
-    "pk": 324.4,
-    "coordenades": {
-      "lat": 40.723552,
-      "lng": 5.66325
-    }
-  },
-  "818": {
-    "carretera": "AP-7",
-    "pk": 333.3,
-    "coordenades": {
-      "lat": 40.671968,
-      "lng": 5.1546
-    }
-  },
-  "819": {
-    "carretera": "AP-7",
-    "pk": 337.3,
-    "coordenades": {
-      "lat": 40.581423,
-      "lng": 4.54215
-    }
-  },
-  "820": {
-    "carretera": "AP-7",
-    "pk": 341.3,
-    "coordenades": {
-      "lat": 40.579093,
-      "lng": 4.51125
-    }
-  },
+
   "1101": {
     "carretera": "A-2",
     "pk": 609.2,
@@ -4278,5 +2991,1294 @@ export default {
       "lat": 41.416499,
       "lng": 2.138015
     }
+  },
+  "0001": {
+    "carretera": "B-20",
+    "pk": 15.63,
+    "coordenades": {
+      "lat": 41.446203,
+      "lng": 2.180832
+    }
+  },
+  "0002": {
+    "carretera": "B-20",
+    "pk": 14.9,
+    "coordenades": {
+      "lat": 41.442778,
+      "lng": 2.169794
+    }
+  },
+  "0003": {
+    "carretera": "B-20",
+    "pk": 13.32,
+    "coordenades": {
+      "lat": 41.439655,
+      "lng": 2.161627
+    }
+  },
+  "0004": {
+    "carretera": "B-20",
+    "pk": 12.34,
+    "coordenades": {
+      "lat": 41.437805,
+      "lng": 2.151475
+    }
+  },
+  "0005": {
+    "carretera": "B-20",
+    "pk": 11.45,
+    "coordenades": {
+      "lat": 41.43198,
+      "lng": 2.145488
+    }
+  },
+  "0006": {
+    "carretera": "B-20",
+    "pk": 10.6,
+    "coordenades": {
+      "lat": 41.42474,
+      "lng": 2.142111
+    }
+  },
+  "0007": {
+    "carretera": "B-20",
+    "pk": 9.55,
+    "coordenades": {
+      "lat": 41.415867,
+      "lng": 2.13768
+    }
+  },
+  "0008": {
+    "carretera": "B-20",
+    "pk": 8.4,
+    "coordenades": {
+      "lat": 41.410469,
+      "lng": 2.126066
+    }
+  },
+  "0009": {
+    "carretera": "B-20",
+    "pk": 7.47,
+    "coordenades": {
+      "lat": 41.404537,
+      "lng": 2.117397
+    }
+  },
+  "0010": {
+    "carretera": "B-20",
+    "pk": 7.42,
+    "coordenades": {
+      "lat": 41.4049,
+      "lng": 2.117776
+    }
+  },
+  "0011": {
+    "carretera": "B-20",
+    "pk": 5.42,
+    "coordenades": {
+      "lat": 41.38855,
+      "lng": 2.107221
+    }
+  },
+  "0012": {
+    "carretera": "B-20",
+    "pk": 4.6,
+    "coordenades": {
+      "lat": 41.382568,
+      "lng": 2.102458
+    }
+  },
+  "0013": {
+    "carretera": "C-32",
+    "pk": 62.3,
+    "coordenades": {
+      "lat": 41.376705,
+      "lng": 2.095725
+    }
+  },
+  "0014": {
+    "carretera": "C-32",
+    "pk": 59.5,
+    "coordenades": {
+      "lat": 41.3519381,
+      "lng": 2.091753149
+    }
+  },
+  "0015": {
+    "carretera": "B-10",
+    "pk": 21.35,
+    "coordenades": {
+      "lat": 41.345135,
+      "lng": 2.089449
+    }
+  },
+  "0016": {
+    "carretera": "B-10",
+    "pk": 17.65,
+    "coordenades": {
+      "lat": 41.340019,
+      "lng": 2.118087
+    }
+  },
+  "0017": {
+    "carretera": "B-10",
+    "pk": 16.57,
+    "coordenades": {
+      "lat": 41.343418,
+      "lng": 2.131012
+    }
+  },
+  "0018": {
+    "carretera": "B-10",
+    "pk": 15.19,
+    "coordenades": {
+      "lat": 41.34927,
+      "lng": 2.146719
+    }
+  },
+  "0019": {
+    "carretera": "B-10",
+    "pk": 14.3,
+    "coordenades": {
+      "lat": 41.35302,
+      "lng": 2.157824
+    }
+  },
+  "0020": {
+    "carretera": "B-10",
+    "pk": 12.19,
+    "coordenades": {
+      "lat": 41.365719,
+      "lng": 2.171482
+    }
+  },
+  "0021": {
+    "carretera": "B-10",
+    "pk": 10.69,
+    "coordenades": {
+      "lat": 41.378082,
+      "lng": 2.180311
+    }
+  },
+  "0022": {
+    "carretera": "B-10",
+    "pk": 9.45,
+    "coordenades": {
+      "lat": 41.384521,
+      "lng": 2.191496
+    }
+  },
+  "0023": {
+    "carretera": "B-10",
+    "pk": 8.92,
+    "coordenades": {
+      "lat": 41.387955,
+      "lng": 2.195745
+    }
+  },
+  "0024": {
+    "carretera": "B-10",
+    "pk": 7.99,
+    "coordenades": {
+      "lat": 41.393017,
+      "lng": 2.202987
+    }
+  },
+  "0025": {
+    "carretera": "B-10",
+    "pk": 6.7,
+    "coordenades": {
+      "lat": 41.401505,
+      "lng": 2.212235
+    }
+  },
+  "0026": {
+    "carretera": "B-10",
+    "pk": 5.8,
+    "coordenades": {
+      "lat": 41.406498,
+      "lng": 2.219024
+    }
+  },
+  "0027": {
+    "carretera": "B-10",
+    "pk": 4.3,
+    "coordenades": {
+      "lat": 41.41864,
+      "lng": 2.22522
+    }
+  },
+  "0028": {
+    "carretera": "B-10",
+    "pk": 2.6,
+    "coordenades": {
+      "lat": 41.429432,
+      "lng": 2.213262
+    }
+  },
+  "0029": {
+    "carretera": "B-10",
+    "pk": 0.76,
+    "coordenades": {
+      "lat": 41.443405,
+      "lng": 2.206527
+    }
+  },
+  "0030": {
+    "carretera": "B-10",
+    "pk": 0,
+    "coordenades": {
+      "lat": 41.448547,
+      "lng": 2.20174
+    }
+  },
+  "0031": {
+    "carretera": "B-10",
+    "pk": 0,
+    "coordenades": {
+      "lat": 41.45259667,
+      "lng": 2.195275688
+    }
+  },
+  "0032": {
+    "carretera": "B-10",
+    "pk": 13,
+    "coordenades": {
+      "lat": 41.359909,
+      "lng": 2.165629
+    }
+  },
+  "0033": {
+    "carretera": "B-10",
+    "pk": 11.6,
+    "coordenades": {
+      "lat": 41.370083,
+      "lng": 2.174089
+    }
+  },
+  "0101": {
+    "carretera": "T-11",
+    "pk": 18,
+    "coordenades": {
+      "lat": 41.118656,
+      "lng": 1.233719
+    }
+  },
+  "0102": {
+    "carretera": "T-11",
+    "pk": 10,
+    "coordenades": {
+      "lat": 41.136158,
+      "lng": 1.146697
+    }
+  },
+  "0201": {
+    "carretera": "AP-2",
+    "pk": 232.1,
+    "coordenades": {
+      "lat": 41.269943,
+      "lng": 1.531828
+    }
+  },
+  "0202": {
+    "carretera": "AP-2",
+    "pk": 202.7,
+    "coordenades": {
+      "lat": 41.392752,
+      "lng": 1.275207
+    }
+  },
+  "0203": {
+    "carretera": "AP-2",
+    "pk": 193,
+    "coordenades": {
+      "lat": 41.389824,
+      "lng": 1.168259
+    }
+  },
+  "0204": {
+    "carretera": "AP-2",
+    "pk": 178.7,
+    "coordenades": {
+      "lat": 41.418493,
+      "lng": 9.79923
+    }
+  },
+  "0205": {
+    "carretera": "AP-2",
+    "pk": 174.2,
+    "coordenades": {
+      "lat": 41.430758,
+      "lng": 9.31188
+    }
+  },
+  "0206": {
+    "carretera": "AP-2",
+    "pk": 160.8,
+    "coordenades": {
+      "lat": 41.502187,
+      "lng": 8.46531
+    }
+  },
+  "0207": {
+    "carretera": "AP-2",
+    "pk": 140.2,
+    "coordenades": {
+      "lat": 41.549023,
+      "lng": 6.24323
+    }
+  },
+  "0208": {
+    "carretera": "AP-2",
+    "pk": 127.3,
+    "coordenades": {
+      "lat": 41.541496,
+      "lng": 4.85439
+    }
+  },
+  "0209": {
+    "carretera": "AP-2",
+    "pk": 114.2,
+    "coordenades": {
+      "lat": 41.490751,
+      "lng": 3.53829
+    }
+  },
+  "0701": {
+    "carretera": "A-9",
+    "pk": 271.8,
+    "coordenades": {
+      "lat": 42.529067,
+      "lng": 2.82174
+    }
+  },
+  "0702": {
+    "carretera": "A-9",
+    "pk": 276.5,
+    "coordenades": {
+      "lat": 42.478778,
+      "lng": 2.847277
+    }
+  },
+  "0703": {
+    "carretera": "A-9",
+    "pk": 278.5,
+    "coordenades": {
+      "lat": 42.478778,
+      "lng": 2.847277
+    }
+  },
+  "0704": {
+    "carretera": "A-9",
+    "pk": 279,
+    "coordenades": {
+      "lat": 43.487198,
+      "lng": 3.707801
+    }
+  },
+  "0705": {
+    "carretera": "AP-7",
+    "pk": 0,
+    "coordenades": {
+      "lat": 42.464674,
+      "lng": 2.865541
+    }
+  },
+  "0706": {
+    "carretera": "AP-7",
+    "pk": 1.8,
+    "coordenades": {
+      "lat": 42.455709,
+      "lng": 2.866495
+    }
+  },
+  "0707": {
+    "carretera": "AP-7",
+    "pk": 3.5,
+    "coordenades": {
+      "lat": 42.438318,
+      "lng": 2.865884
+    }
+  },
+  "0708": {
+    "carretera": "AP-7",
+    "pk": 6.5,
+    "coordenades": {
+      "lat": 42.413015,
+      "lng": 2.872182
+    }
+  },
+  "0709": {
+    "carretera": "AP-7",
+    "pk": 8.8,
+    "coordenades": {
+      "lat": 42.395962,
+      "lng": 2.878154
+    }
+  },
+  "0710": {
+    "carretera": "AP-7",
+    "pk": 15.4,
+    "coordenades": {
+      "lat": 42.34262,
+      "lng": 2.919054
+    }
+  },
+  "0711": {
+    "carretera": "AP-7",
+    "pk": 20,
+    "coordenades": {
+      "lat": 42.303979,
+      "lng": 2.945308
+    }
+  },
+  "0712": {
+    "carretera": "AP-7",
+    "pk": 23.85,
+    "coordenades": {
+      "lat": 42.277701,
+      "lng": 2.94054
+    }
+  },
+  "0713": {
+    "carretera": "AP-7",
+    "pk": 29,
+    "coordenades": {
+      "lat": 42.225519,
+      "lng": 2.93863
+    }
+  },
+  "0714": {
+    "carretera": "AP-7",
+    "pk": 32,
+    "coordenades": {
+      "lat": 42.199483,
+      "lng": 2.934236
+    }
+  },
+  "0715": {
+    "carretera": "AP-7",
+    "pk": 40.2,
+    "coordenades": {
+      "lat": 42.13213,
+      "lng": 2.913945
+    }
+  },
+  "0716": {
+    "carretera": "AP-7",
+    "pk": 44.5,
+    "coordenades": {
+      "lat": 42.099839,
+      "lng": 2.900961
+    }
+  },
+  "0717": {
+    "carretera": "AP-7",
+    "pk": 49.8,
+    "coordenades": {
+      "lat": 42.057979,
+      "lng": 2.882902
+    }
+  },
+  "0718": {
+    "carretera": "AP-7",
+    "pk": 55,
+    "coordenades": {
+      "lat": 42.028861,
+      "lng": 2.827335
+    }
+  },
+  "0719": {
+    "carretera": "AP-7",
+    "pk": 60.8,
+    "coordenades": {
+      "lat": 41.993406,
+      "lng": 2.792947
+    }
+  },
+  "0720": {
+    "carretera": "AP-7",
+    "pk": 64,
+    "coordenades": {
+      "lat": 41.96119,
+      "lng": 2.782086
+    }
+  },
+  "0721": {
+    "carretera": "AP-7",
+    "pk": 71.6,
+    "coordenades": {
+      "lat": 41.901976,
+      "lng": 2.773923
+    }
+  },
+  "0722": {
+    "carretera": "AP-7",
+    "pk": 79.3,
+    "coordenades": {
+      "lat": 41.834992,
+      "lng": 2.749286
+    }
+  },
+  "0723": {
+    "carretera": "AP-7",
+    "pk": 84.6,
+    "coordenades": {
+      "lat": 41.782029,
+      "lng": 2.743738
+    }
+  },
+  "0724": {
+    "carretera": "AP-7",
+    "pk": 87,
+    "coordenades": {
+      "lat": 41.766452,
+      "lng": 2.732642
+    }
+  },
+  "0725": {
+    "carretera": "AP-7",
+    "pk": 89.7,
+    "coordenades": {
+      "lat": 41.756936,
+      "lng": 2.712442
+    }
+  },
+  "0726": {
+    "carretera": "AP-7",
+    "pk": 95.4,
+    "coordenades": {
+      "lat": 41.742001,
+      "lng": 2.647226
+    }
+  },
+  "0727": {
+    "carretera": "AP-7",
+    "pk": 100.8,
+    "coordenades": {
+      "lat": 41.725899,
+      "lng": 2.595208
+    }
+  },
+  "0728": {
+    "carretera": "AP-7",
+    "pk": 107.2,
+    "coordenades": {
+      "lat": 41.702267,
+      "lng": 2.519059
+    }
+  },
+  "0729": {
+    "carretera": "AP-7",
+    "pk": 111.5,
+    "coordenades": {
+      "lat": 41.676344,
+      "lng": 2.486438
+    }
+  },
+  "0730": {
+    "carretera": "AP-7",
+    "pk": 117.4,
+    "coordenades": {
+      "lat": 41.647864,
+      "lng": 2.427144
+    }
+  },
+  "0731": {
+    "carretera": "AP-7",
+    "pk": 123,
+    "coordenades": {
+      "lat": 41.624287,
+      "lng": 2.3644
+    }
+  },
+  "0732": {
+    "carretera": "AP-7",
+    "pk": 125,
+    "coordenades": {
+      "lat": 41.611887,
+      "lng": 2.34735
+    }
+  },
+  "0733": {
+    "carretera": "AP-7",
+    "pk": 128,
+    "coordenades": {
+      "lat": 41.591677,
+      "lng": 2.308776
+    }
+  },
+  "0734": {
+    "carretera": "AP-7",
+    "pk": 130.3,
+    "coordenades": {
+      "lat": 41.583743,
+      "lng": 2.297285
+    }
+  },
+  "0735": {
+    "carretera": "AP-7",
+    "pk": 133,
+    "coordenades": {
+      "lat": 41.566778,
+      "lng": 2.278098
+    }
+  },
+  "0736": {
+    "carretera": "AP-7",
+    "pk": 136.6,
+    "coordenades": {
+      "lat": 41.521225,
+      "lng": 2.157656
+    }
+  },
+  "0737": {
+    "carretera": "AP-7",
+    "pk": 138.5,
+    "coordenades": {
+      "lat": 41.549052,
+      "lng": 2.221524
+    }
+  },
+  "0738": {
+    "carretera": "AP-7",
+    "pk": 139.65,
+    "coordenades": {
+      "lat": 41.550021,
+      "lng": 2.215668
+    }
+  },
+  "0739": {
+    "carretera": "AP-7",
+    "pk": 141.43,
+    "coordenades": {
+      "lat": 41.544953,
+      "lng": 2.192988
+    }
+  },
+  "0740": {
+    "carretera": "AP-7",
+    "pk": 143.715,
+    "coordenades": {
+      "lat": 41.536871,
+      "lng": 2.172302
+    }
+  },
+  "0741": {
+    "carretera": "AP-7",
+    "pk": 145.65,
+    "coordenades": {
+      "lat": 41.522008,
+      "lng": 2.160674
+    }
+  },
+  "0742": {
+    "carretera": "AP-7",
+    "pk": 146.5,
+    "coordenades": {
+      "lat": 41.51590907,
+      "lng": 2.145709273
+    }
+  },
+  "0743": {
+    "carretera": "AP-7",
+    "pk": 147,
+    "coordenades": {
+      "lat": 41.512239,
+      "lng": 2.140957
+    }
+  },
+  "0744": {
+    "carretera": "B-30",
+    "pk": 11.2,
+    "coordenades": {
+      "lat": 41.5088522,
+      "lng": 2.132994071
+    }
+  },
+  "0745": {
+    "carretera": "B-30",
+    "pk": 9.7,
+    "coordenades": {
+      "lat": 41.50097303,
+      "lng": 2.117889296
+    }
+  },
+  "0746": {
+    "carretera": "B-30",
+    "pk": 8.2,
+    "coordenades": {
+      "lat": 41.49358427,
+      "lng": 2.103748637
+    }
+  },
+  "0747": {
+    "carretera": "AP-7",
+    "pk": 151.6,
+    "coordenades": {
+      "lat": 41.49126139,
+      "lng": 2.093800285
+    }
+  },
+  "0748": {
+    "carretera": "B-30",
+    "pk": 152.7,
+    "coordenades": {
+      "lat": 41.48787824,
+      "lng": 2.082942728
+    }
+  },
+  "0749": {
+    "carretera": "B-30",
+    "pk": 153.3,
+    "coordenades": {
+      "lat": 41.48818718,
+      "lng": 2.075724848
+    }
+  },
+  "0750": {
+    "carretera": "AP-7",
+    "pk": 153.7,
+    "coordenades": {
+      "lat": 41.485473,
+      "lng": 2.043252
+    }
+  },
+  "0751": {
+    "carretera": "B-30",
+    "pk": 5,
+    "coordenades": {
+      "lat": 41.48977893,
+      "lng": 2.067509366
+    }
+  },
+  "0752": {
+    "carretera": "B-30",
+    "pk": 4.4,
+    "coordenades": {
+      "lat": 41.48959466,
+      "lng": 2.05949544
+    }
+  },
+  "0753": {
+    "carretera": "B-30",
+    "pk": 3.4,
+    "coordenades": {
+      "lat": 41.484928,
+      "lng": 2.049162
+    }
+  },
+  "0754": {
+    "carretera": "B-30",
+    "pk": 1.8,
+    "coordenades": {
+      "lat": 41.47485,
+      "lng": 2.040423
+    }
+  },
+  "0755": {
+    "carretera": "AP-7",
+    "pk": 158.9,
+    "coordenades": {
+      "lat": 41.485473,
+      "lng": 2.043252
+    }
+  },
+  "0756": {
+    "carretera": "AP-7",
+    "pk": 159.815,
+    "coordenades": {
+      "lat": 41.485473,
+      "lng": 2.043252
+    }
+  },
+  "0760": {
+    "carretera": "AP-7",
+    "pk": 161.7,
+    "coordenades": {
+      "lat": 41.468305,
+      "lng": 2.033615
+    }
+  },
+  "0761": {
+    "carretera": "AP-7",
+    "pk": 164.965,
+    "coordenades": {
+      "lat": 41.44636695,
+      "lng": 1.995052207
+    }
+  },
+  "0762": {
+    "carretera": "AP-7",
+    "pk": 166.6,
+    "coordenades": {
+      "lat": 41.46358228,
+      "lng": 1.980313846
+    }
+  },
+  "0763": {
+    "carretera": "AP-7",
+    "pk": 168.112,
+    "coordenades": {
+      "lat": 41.47024856,
+      "lng": 1.964915568
+    }
+  },
+  "0764": {
+    "carretera": "AP-7",
+    "pk": 169.722,
+    "coordenades": {
+      "lat": 41.4702643,
+      "lng": 1.946939322
+    }
+  },
+  "0765": {
+    "carretera": "AP-7",
+    "pk": 171.2,
+    "coordenades": {
+      "lat": 41.47192031,
+      "lng": 1.92880172
+    }
+  },
+  "0766": {
+    "carretera": "AP-7",
+    "pk": 171.19,
+    "coordenades": {
+      "lat": 41.46660115,
+      "lng": 1.915627132
+    }
+  },
+  "0767": {
+    "carretera": "AP-7",
+    "pk": 173.9,
+    "coordenades": {
+      "lat": 41.445663,
+      "lng": 1.864617
+    }
+  },
+  "0768": {
+    "carretera": "AP-7",
+    "pk": 176.7,
+    "coordenades": {
+      "lat": 41.429287,
+      "lng": 1.83596
+    }
+  },
+  "0769": {
+    "carretera": "AP-7",
+    "pk": 182.8,
+    "coordenades": {
+      "lat": 41.422393,
+      "lng": 1.817945
+    }
+  },
+  "0770": {
+    "carretera": "AP-7",
+    "pk": 188.8,
+    "coordenades": {
+      "lat": 41.419475,
+      "lng": 1.798057
+    }
+  },
+  "0771": {
+    "carretera": "AP-7",
+    "pk": 186.7,
+    "coordenades": {
+      "lat": 41.394297,
+      "lng": 1.767039
+    }
+  },
+  "0772": {
+    "carretera": "AP-7",
+    "pk": 190.4,
+    "coordenades": {
+      "lat": 41.379445,
+      "lng": 1.736851
+    }
+  },
+  "0773": {
+    "carretera": "AP-7",
+    "pk": 193.5,
+    "coordenades": {
+      "lat": 41.35598,
+      "lng": 1.723436
+    }
+  },
+  "0774": {
+    "carretera": "AP-7",
+    "pk": 195.5,
+    "coordenades": {
+      "lat": 41.333082,
+      "lng": 1.712404
+    }
+  },
+  "0775": {
+    "carretera": "AP-7",
+    "pk": 197.5,
+    "coordenades": {
+      "lat": 41.348473,
+      "lng": 1.718183
+    }
+  },
+  "0776": {
+    "carretera": "AP-7",
+    "pk": 200,
+    "coordenades": {
+      "lat": 41.327862,
+      "lng": 1.686569
+    }
+  },
+  "0777": {
+    "carretera": "AP-7",
+    "pk": 204.25,
+    "coordenades": {
+      "lat": 41.310675,
+      "lng": 1.624089
+    }
+  },
+  "0778": {
+    "carretera": "AP-7",
+    "pk": 208.5,
+    "coordenades": {
+      "lat": 41.271523,
+      "lng": 1.527966
+    }
+  },
+  "0779": {
+    "carretera": "AP-7",
+    "pk": 212,
+    "coordenades": {
+      "lat": 41.269276,
+      "lng": 1.547732
+    }
+  },
+  "0780": {
+    "carretera": "AP-7",
+    "pk": 217,
+    "coordenades": {
+      "lat": 41.23073,
+      "lng": 1.526655
+    }
+  },
+  "0781": {
+    "carretera": "AP-7",
+    "pk": 218.6,
+    "coordenades": {
+      "lat": 41.219401,
+      "lng": 1.515465
+    }
+  },
+  "0782": {
+    "carretera": "AP-7",
+    "pk": 220.5,
+    "coordenades": {
+      "lat": 41.26872,
+      "lng": 1.546049
+    }
+  },
+  "0783": {
+    "carretera": "AP-7",
+    "pk": 224,
+    "coordenades": {
+      "lat": 41.183353,
+      "lng": 1.477082
+    }
+  },
+  "0784": {
+    "carretera": "AP-7",
+    "pk": 225.8,
+    "coordenades": {
+      "lat": 41.181264,
+      "lng": 1.456243
+    }
+  },
+  "0785": {
+    "carretera": "AP-7",
+    "pk": 233,
+    "coordenades": {
+      "lat": 41.15686,
+      "lng": 1.38146
+    }
+  },
+  "0786": {
+    "carretera": "AP-7",
+    "pk": 242.4,
+    "coordenades": {
+      "lat": 41.143989,
+      "lng": 1.247406
+    }
+  },
+  "0787": {
+    "carretera": "AP-7",
+    "pk": 244.73,
+    "coordenades": {
+      "lat": 41.160639,
+      "lng": 1.397167
+    }
+  },
+  "0788": {
+    "carretera": "AP-7",
+    "pk": 247,
+    "coordenades": {
+      "lat": 41.159988,
+      "lng": 1.392447
+    }
+  },
+  "0789": {
+    "carretera": "AP-7",
+    "pk": 249.5,
+    "coordenades": {
+      "lat": 41.163868,
+      "lng": 1.410253
+    }
+  },
+  "0790": {
+    "carretera": "AP-7",
+    "pk": 251.6,
+    "coordenades": {
+      "lat": 41.116615,
+      "lng": 1.138995
+    }
+  },
+  "0791": {
+    "carretera": "AP-7",
+    "pk": 254.11,
+    "coordenades": {
+      "lat": 41.116615,
+      "lng": 1.138995
+    }
+  },
+  "0792": {
+    "carretera": "AP-7",
+    "pk": 257,
+    "coordenades": {
+      "lat": 41.1038,
+      "lng": 1.12081
+    }
+  },
+  "0793": {
+    "carretera": "AP-7",
+    "pk": 258.9,
+    "coordenades": {
+      "lat": 41.116966,
+      "lng": 1.139922
+    }
+  },
+  "0794": {
+    "carretera": "AP-7",
+    "pk": 263.9,
+    "coordenades": {
+      "lat": 41.081722,
+      "lng": 1.041001
+    }
+  },
+  "0795": {
+    "carretera": "AP-7",
+    "pk": 265,
+    "coordenades": {
+      "lat": 41.082377,
+      "lng": 1.046505
+    }
+  },
+  "0796": {
+    "carretera": "AP-7",
+    "pk": 266.8,
+    "coordenades": {
+      "lat": 41.082579,
+      "lng": 1.053704
+    }
+  },
+  "0797": {
+    "carretera": "AP-7",
+    "pk": 270.8,
+    "coordenades": {
+      "lat": 41.059388,
+      "lng": 9.89442
+    }
+  },
+  "0798": {
+    "carretera": "AP-7",
+    "pk": 274.8,
+    "coordenades": {
+      "lat": 41.055675,
+      "lng": 9.847
+    }
+  },
+  "0799": {
+    "carretera": "AP-7",
+    "pk": 279.3,
+    "coordenades": {
+      "lat": 40.99554,
+      "lng": 9.07163
+    }
+  },
+  "0800": {
+    "carretera": "AP-7",
+    "pk": 281,
+    "coordenades": {
+      "lat": 40.981367,
+      "lng": 8.87751
+    }
+  },
+  "0801": {
+    "carretera": "AP-7",
+    "pk": 284.5,
+    "coordenades": {
+      "lat": 40.983424,
+      "lng": 8.91592
+    }
+  },
+  "0802": {
+    "carretera": "AP-7",
+    "pk": 288,
+    "coordenades": {
+      "lat": 41.016072,
+      "lng": 9.07212
+    }
+  },
+  "0803": {
+    "carretera": "AP-7",
+    "pk": 295.2,
+    "coordenades": {
+      "lat": 40.88213,
+      "lng": 7.94647
+    }
+  },
+  "0804": {
+    "carretera": "AP-7",
+    "pk": 296.1,
+    "coordenades": {
+      "lat": 40.879453,
+      "lng": 7.9233
+    }
+  },
+  "0805": {
+    "carretera": "AP-7",
+    "pk": 297,
+    "coordenades": {
+      "lat": 40.888676,
+      "lng": 8.01261
+    }
+  },
+  "0806": {
+    "carretera": "AP-7",
+    "pk": 298.8,
+    "coordenades": {
+      "lat": 40.885975,
+      "lng": 7.98364
+    }
+  },
+  "0807": {
+    "carretera": "AP-7",
+    "pk": 303.5,
+    "coordenades": {
+      "lat": 40.832994,
+      "lng": 7.39022
+    }
+  },
+  "0808": {
+    "carretera": "AP-7",
+    "pk": 307.1,
+    "coordenades": {
+      "lat": 40.811253,
+      "lng": 7.00422
+    }
+  },
+  "0809": {
+    "carretera": "AP-7",
+    "pk": 309,
+    "coordenades": {
+      "lat": 40.809369,
+      "lng": 6.97675
+    }
+  },
+  "0810": {
+    "carretera": "AP-7",
+    "pk": 310.4,
+    "coordenades": {
+      "lat": 40.815761,
+      "lng": 7.11073
+    }
+  },
+  "0811": {
+    "carretera": "AP-7",
+    "pk": 315.8,
+    "coordenades": {
+      "lat": 40.781521,
+      "lng": 6.47414
+    }
+  },
+  "0812": {
+    "carretera": "AP-7",
+    "pk": 317.8,
+    "coordenades": {
+      "lat": 40.744731,
+      "lng": 5.93384
+    }
+  },
+  "0813": {
+    "carretera": "AP-7",
+    "pk": 318.3,
+    "coordenades": {
+      "lat": 40.748356,
+      "lng": 5.9597
+    }
+  },
+  "0814": {
+    "carretera": "AP-7",
+    "pk": 319,
+    "coordenades": {
+      "lat": 40.750616,
+      "lng": 5.98116
+    }
+  },
+  "0815": {
+    "carretera": "AP-7",
+    "pk": 320.2,
+    "coordenades": {
+      "lat": 40.75386,
+      "lng": 6.0232
+    }
+  },
+  "0816": {
+    "carretera": "AP-7",
+    "pk": 323,
+    "coordenades": {
+      "lat": 40.752559,
+      "lng": 6.00687
+    }
+  },
+  "0817": {
+    "carretera": "AP-7",
+    "pk": 324.4,
+    "coordenades": {
+      "lat": 40.723552,
+      "lng": 5.66325
+    }
+  },
+  "0818": {
+    "carretera": "AP-7",
+    "pk": 333.3,
+    "coordenades": {
+      "lat": 40.671968,
+      "lng": 5.1546
+    }
+  },
+  "0819": {
+    "carretera": "AP-7",
+    "pk": 337.3,
+    "coordenades": {
+      "lat": 40.581423,
+      "lng": 4.54215
+    }
+  },
+  "0820": {
+    "carretera": "AP-7",
+    "pk": 341.3,
+    "coordenades": {
+      "lat": 40.579093,
+      "lng": 4.51125
+    }
   }
+    
 }

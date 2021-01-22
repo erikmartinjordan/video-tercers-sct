@@ -21,11 +21,9 @@ const Search = () => {
 
         let Query = query.toUpperCase();
         
-        // Filter camera by number
         if(id.startsWith(Query)) 
             return true;
         
-        // Filter camera by road
         if(cameres[id].carretera.startsWith(Query) || cameres[id].carretera.replace(/-/g, '').startsWith(Query))
             return true;
         

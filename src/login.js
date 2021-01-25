@@ -4,14 +4,12 @@ import cameres         from './src/cameres.js';
 
 const Login = () => {
     
-    const [auth, setAuth]     = React.useState(false);
+    const [auth, setAuth]     = React.useState('user');
     const [error, setError]   = React.useState(null);
-    const [output, setOutput] = React.useState(null); 
-    const [user, setUser]     = React.useState(null);
+    const [output, setOutput] = React.useState(-1); 
+    const [user, setUser]     = React.useState('SCT');
     const [pass, setPass]     = React.useState(null);
     const [vlc, setVlc]       = React.useState(null);
-    
-    console.log(output);
     
     const connectCamera = async (user, pass, address, port, camera) => {
         
@@ -26,9 +24,9 @@ const Login = () => {
             setTimeout(async () => {
                 
                 let { rtsp_ports } = config[user];
-            
+                
                 let rtsp = `rtsp://${address}:${rtsp_ports[output]}/output${output + 1}.sdp`;
-
+                
                 await ipcRenderer.invoke('launchVLC', rtsp);
                 
                 setVlc('launched');
@@ -40,18 +38,18 @@ const Login = () => {
     }
     
     const placeCams = () => {
-                
+        
         Object.entries(cameres).forEach(([id, camera]) => {
-
+            
             var cameraIcon = L.divIcon({
-
+                
                 html: `<div class = 'Icon'>
                             <img src = './assets/camera_icon.png'/>
                             <div class = 'Number'>${id}</div>
                        </div>`
                 
             });
-
+            
             L.marker([camera.coordenades.lat, camera.coordenades.lng], {icon: cameraIcon}).addTo(mapa).on('click', async () => {
                 
                 let { address, port } = config[user];
@@ -59,7 +57,7 @@ const Login = () => {
                 connectCamera(user, pass, address, port, id);
                 
             });
-
+            
         });
         
     }
@@ -76,7 +74,7 @@ const Login = () => {
         
         if(res.ok){
             
-            setAuth(true);
+            setAuth('user');
             
         }
         else{
@@ -89,7 +87,7 @@ const Login = () => {
 
     return(
         <React.Fragment>
-            { !auth
+            { auth === 'login'
             ? <div className = 'Login'>
                 <div className = 'Login-Wrapper'>
                     <img src = {'./assets/sct_logo.png'}></img>
@@ -102,10 +100,17 @@ const Login = () => {
                     <span className = 'Error'>{error}</span>
                 </div>
               </div>
-            : !output 
+            : auth === 'user' 
             ? <div className = 'User'> 
                     <div className = 'User-Wrapper'>
-                        {Object.values(config[user].rtsp_ports).map((member, index) => <div onClick = {() => setOutput(index)}>{member.name}</div>)}
+                        <p>Abans de començar, si us plau, selecciona el teu perfil d'usuari:</p>
+                        {Object.values(config[user].rtsp_ports).map((member, index) => 
+                            <div className = {output === index ? 'User-Pic Selected' : 'User-Pic'} onClick = {() => setOutput(index)} key = {index}>
+                                <img src = {member.pic}></img>
+                                <span>{member.name}</span>
+                            </div>
+                        )}
+                        {output >= 0 ? <button onClick = {placeCams}>Comença</button> : null}
                     </div>
               </div>    
             : null

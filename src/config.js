@@ -6,35 +6,35 @@ export default {
         "rtsp_ports": {
             "9001": {
                 "name": "Jean Peña",
-                "pic": ''
+                "pic": "./assets/jean.png"
             },
             "9002": {
                 "name": "Lluís Serrano",
-                "pic": ''
+                "pic": "./assets/lluis.png"
             },
             "9003": {
                 "name": "José Carlos García",
-                "pic": ''
+                "pic": "./assets/carlos.png"
             },
             "9004": {
                 "name": "Jordi Moli",
-                "pic": ''
+                "pic": "./assets/jordi.png"
             },
             "9005": {
                 "name": "Vicente Gallego",
-                "pic": ''
+                "pic": "./assets/vicente.png"
             },
             "9006": {
                 "name": "Visitant 1",
-                "pic": ''
+                "pic": "./assets/visitant_1.png"
             },
             "9007": {
                 "name": "Visitant 2",
-                "pic": ''
+                "pic": "./assets/visitant_2.png"
             },
             "9008": {
                 "name": "Visitant 3",
-                "pic": ''
+                "pic": "./assets/visitant_3.png"
             }
         }
     }

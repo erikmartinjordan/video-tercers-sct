@@ -4,15 +4,18 @@ import cameres         from './src/cameres.js';
 
 const Login = () => {
     
-    const [auth, setAuth]    = React.useState(false);
-    const [error, setError]  = React.useState(null);
-    const [user, setUser]    = React.useState(null);
-    const [pass, setPass]    = React.useState(null);
-    const [vlc, setVlc]      = React.useState(null);
+    const [auth, setAuth]     = React.useState(false);
+    const [error, setError]   = React.useState(null);
+    const [output, setOutput] = React.useState(null); 
+    const [user, setUser]     = React.useState(null);
+    const [pass, setPass]     = React.useState(null);
+    const [vlc, setVlc]       = React.useState(null);
+    
+    console.log(output);
     
     const connectCamera = async (user, pass, address, port, camera) => {
         
-        let url = `http://${address}:${port}/set?operation=connect&output=1&camera=camera.${camera}`;
+        let url = `http://${address}:${port}/set?operation=connect&output=${output + 1}&camera=camera.${camera}`;
         
         let res = await fetch(url, {headers: {'Authorization': 'Basic ' +  btoa(user + ":" + pass) }}); 
         
@@ -24,7 +27,7 @@ const Login = () => {
                 
                 let { rtsp_ports } = config[user];
             
-                let rtsp = `rtsp://${address}:${rtsp_ports[0]}/output1.sdp`;
+                let rtsp = `rtsp://${address}:${rtsp_ports[output]}/output${output + 1}.sdp`;
 
                 await ipcRenderer.invoke('launchVLC', rtsp);
                 
@@ -74,7 +77,6 @@ const Login = () => {
         if(res.ok){
             
             setAuth(true);
-            placeCams();
             
         }
         else{
@@ -100,8 +102,14 @@ const Login = () => {
                     <span className = 'Error'>{error}</span>
                 </div>
               </div>
-            : null                
-            }
+            : !output 
+            ? <div className = 'User'> 
+                    <div className = 'User-Wrapper'>
+                        {Object.values(config[user].rtsp_ports).map((member, index) => <div onClick = {() => setOutput(index)}>{member.name}</div>)}
+                    </div>
+              </div>    
+            : null
+            }  
             { vlc === 'loading'
             ? <div className = 'Loader'>
                 <div className = 'Loader-Wrapper'>

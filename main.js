@@ -21,19 +21,7 @@ function createWindow () {
 
     win.loadFile('index.html');
     
-    win.setMenuBarVisibility(false);
-    
-}
-
-async function connectCamera (user, password, address, port, num_output, num_camera) {
-    
-    await fetch(`http://${user}:${password}@${address}:${port}/set?operation=connect&output=${num_output}&camera=${num_camera}`);
-    
-}
-
-async function disconnectCamera (user, password, address, port, num_camera) {
-    
-    await fecth(`http://${user}:${password}@${address}:${port}/set?opeartion=disconnect&output=${num_camera}`);
+    //win.setMenuBarVisibility(false);
     
 }
 

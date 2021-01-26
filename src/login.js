@@ -132,7 +132,9 @@ const Login = () => {
                     <span className = 'Error'>{error}</span>
                 </div>
               </div>
-            : auth === 'user'
+            : null
+            }
+            {auth === 'user'
             ? <div className = 'User'> 
                     <div className = 'User-Wrapper'>
                         <p>Abans de començar, selecciona el teu perfil d'usuari:</p>

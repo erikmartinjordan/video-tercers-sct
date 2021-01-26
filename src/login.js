@@ -4,7 +4,7 @@ import cameres         from './src/cameres.js';
 
 const Login = () => {
     
-    const [auth, setAuth]     = React.useState('user');
+    const [auth, setAuth]     = React.useState('login');
     const [error, setError]   = React.useState(null);
     const [output, setOutput] = React.useState(-1); 
     const [user, setUser]     = React.useState('SCT');
@@ -24,8 +24,10 @@ const Login = () => {
             setTimeout(async () => {
                 
                 let { rtsp_ports } = config[user];
+
+                let current_rtsp = Object.keys(rtsp_ports)[output];
                 
-                let rtsp = `rtsp://${address}:${rtsp_ports[output]}/output${output + 1}.sdp`;
+                let rtsp = `rtsp://${address}:${current_rtsp}/output${output + 1}.sdp`;
                 
                 await ipcRenderer.invoke('launchVLC', rtsp);
                 
@@ -84,6 +86,13 @@ const Login = () => {
         }
         
     }
+    
+    const displayMap = () => {
+        
+        placeCams();
+        setAuth('done');        
+        
+    }
 
     return(
         <React.Fragment>
@@ -100,17 +109,17 @@ const Login = () => {
                     <span className = 'Error'>{error}</span>
                 </div>
               </div>
-            : auth === 'user' 
+            : auth === 'user'
             ? <div className = 'User'> 
                     <div className = 'User-Wrapper'>
-                        <p>Abans de començar, si us plau, selecciona el teu perfil d'usuari:</p>
+                        <p>Abans de començar, selecciona el teu perfil d'usuari:</p>
                         {Object.values(config[user].rtsp_ports).map((member, index) => 
                             <div className = {output === index ? 'User-Pic Selected' : 'User-Pic'} onClick = {() => setOutput(index)} key = {index}>
                                 <img src = {member.pic}></img>
                                 <span>{member.name}</span>
                             </div>
                         )}
-                        {output >= 0 ? <button onClick = {placeCams}>Comença</button> : null}
+                        {output >= 0 ? <button onClick = {displayMap}>Comença</button> : null}
                     </div>
               </div>    
             : null

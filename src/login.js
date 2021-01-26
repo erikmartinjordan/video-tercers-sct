@@ -11,6 +11,13 @@ const Login = () => {
     const [pass, setPass]     = React.useState(null);
     const [vlc, setVlc]       = React.useState(null);
     
+    React.useEffect(() => {
+        
+        if(output >= 0)
+            window.addEventListener('beforeunload', () => disconnectCamera(user, pass, output));
+        
+    }, [output]);
+    
     const connectCamera = async (user, pass, address, port, camera) => {
         
         let url = `http://${address}:${port}/set?operation=connect&output=${output + 1}&camera=camera.${camera}`;
@@ -34,6 +41,22 @@ const Login = () => {
                 setVlc('launched');
                 
             }, 3000);
+            
+        }
+        
+    }
+    
+    const disconnectCamera = async (user, pass, output) => {
+        
+        let { address, port } = config[user];
+        
+        let url= `http://${address}:${port}/set?operation=disconnect&output=${output + 1}`;
+
+        let res = await fetch(url, {headers: {'Authorization': 'Basic ' +  btoa(user + ":" + pass) }});
+        
+        if(res.ok){
+            
+            console.log('Càmera desconnectada');
             
         }
         

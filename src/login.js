@@ -7,7 +7,7 @@ const Login = () => {
     const [auth, setAuth]     = React.useState('login');
     const [error, setError]   = React.useState(null);
     const [output, setOutput] = React.useState(-1); 
-    const [user, setUser]     = React.useState('SCT');
+    const [user, setUser]     = React.useState(null);
     const [pass, setPass]     = React.useState(null);
     const [vlc, setVlc]       = React.useState(null);
     
@@ -87,7 +87,7 @@ const Login = () => {
         
     }
     
-    const validate = async (e) => {
+    const validateUser = async (e) => {
         
         e.preventDefault();
         
@@ -124,7 +124,7 @@ const Login = () => {
                 <div className = 'Login-Wrapper'>
                     <img src = {'./assets/sct_logo.png'}></img>
                     <p>Si us plau, identifíca't per poder utilitzar l'aplicació de vídeo a tercers del Servei Català del Trànsit:</p>
-                    <form onSubmit = {validate}>
+                    <form onSubmit = {validateUser}>
                         <input onChange = {(e) => setUser(e.target.value)} placeholder = 'Usuari'></input>
                         <input onChange = {(e) => setPass(e.target.value)} placeholder = 'Contrasenya' type = 'password'></input>
                         <button type = 'submit'>Accedeix</button>

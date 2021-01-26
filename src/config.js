@@ -25,16 +25,8 @@ export default {
                 "pic": "./assets/vicente.png"
             },
             "9006": {
-                "name": "Visitant 1",
+                "name": "Visitant",
                 "pic": "./assets/visitant_1.png"
-            },
-            "9007": {
-                "name": "Visitant 2",
-                "pic": "./assets/visitant_2.png"
-            },
-            "9008": {
-                "name": "Visitant 3",
-                "pic": "./assets/visitant_3.png"
             }
         }
     }

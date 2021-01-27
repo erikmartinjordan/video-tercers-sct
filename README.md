@@ -1,4 +1,4 @@
-# video-tercers-sct
+# Aplicació de vídeo a tercers del Servei Català del Trànsit
  
 L'aplicació de vídeo a tercers del Servei Català del Trànsit permet visualitzar en directe les càmeres que estan instal·lades a les carreteres catalanes. 
 
@@ -20,15 +20,6 @@ npx electron-builder --ia32 --x64 -w portable
 Executar l'arxiu `.exe` generat. 
 
 
-## Mode de funcionament de l'aplicació
-
-L'aplicació funciona amb crides `http` als servidors de transcodificació del Servei Català del Trànsit:
-
-- Connexió de càmera: `http://${user}:${pass}@${address}:${port}/set?operation=connect&output=${output}&camera=camera.${camera}`
-- Desconnexió de càmera: `http://${user}:${pass}@${address}:${port}/set?operation=disconnect&output=${output}`
-- Estat de les sortides de vídeo: `http://${user}:${pass}@${address}:${port}/set?operation=status`
-
-
 ## Modificació de les càmeres
 
 L'arxiu **`cameres.js`** conté la informació de posicionament de totes les càmeres. Per exemple:
@@ -48,9 +39,9 @@ L'arxiu **`cameres.js`** conté la informació de posicionament de totes les cà
 
 La clau de l'objecte `"0001"` indica el número de la càmera (segons el criteri d'enumeració del Servei Català del Trànsit). Els altres valors:
 
-`carretera`: El nom de la carretera
-`pk`: Punt quilòmetric on es troba la càmera
-`coordenades`: Les coordenades geogràfiques on es troba la càmera
+- `carretera`: El nom de la carretera
+- `pk`: Punt quilòmetric on es troba la càmera
+- `coordenades`: Les coordenades geogràfiques on es troba la càmera
 
 Per afegir una càmera al mapa, només cal afegir un objecte amb la notació anterior. 
 
@@ -95,8 +86,8 @@ L'arxiu **`config.js`** conté la informació dels diversos ports per visualitza
 
 La clau de l'objecte `"SCT"` correspon al nom de l'entitat que té assignada una sortida de vídeo a tercers (segons el criteri de nomenclatura del Servei Català del Trànsit). Els altres valors:
 
-`address`: Direcció IP del servidor de transcodificació
-`port`: Port del servidor de transcodificació   
-`rtsp_ports`: Els ports de sortida de l'*streaming*
+- `address`: Direcció IP del servidor de transcodificació
+- `port`: Port del servidor de transcodificació   
+- `rtsp_ports`: Els ports de sortida de l'*streaming*
 
 Cada port de sortida s'assigna a un únic usuari per evitar col·lisions. 

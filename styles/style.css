@@ -21,12 +21,12 @@ button{
 }
 @keyframes bounce{
     0% {
-        opacity: 0;
+        opacity: 1;
         transform: scale(1);
     }
 
     50% {
-        opacity: .5;
+        opacity: 1;
         transform: scale(1.1);
     }
     100% {
@@ -110,16 +110,16 @@ button{
     margin-bottom: 5px;
 }
 .User-Pic.Selected{
+    animation: bounce 0.2s ease-in-out;
     background: lightGray;
-    transition: 0.2s ease-in-out;
 }
 .User-Pic:hover{
     background: lightGray;
     cursor: pointer;
 }
 .User img{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 }
 .Login img{
     border-radius: 50%;

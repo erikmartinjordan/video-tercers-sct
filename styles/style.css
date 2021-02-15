@@ -84,12 +84,18 @@ button{
 .User-Wrapper{
     animation: bounce 0.2s ease-in-out;
     background: white;
-    border-radius: 7px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     margin: auto;
     max-width: 400px;
     padding: 20px;
+}
+.Login-Wrapper select{
+    border-radius: 7px;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 10px;
 }
 .Login-Wrapper form{
     display: flex;

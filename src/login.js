@@ -5,6 +5,7 @@ import cameres         from './src/cameres.js';
 const Login = () => {
     
     const [auth, setAuth]     = React.useState('login');
+    const [entity, setEntity] = React.useState('SCT');
     const [error, setError]   = React.useState(null);
     const [output, setOutput] = React.useState(-1); 
     const [user, setUser]     = React.useState(null);
@@ -13,8 +14,12 @@ const Login = () => {
     
     React.useEffect(() => {
         
-        if(output >= 0)
+        if(output >= 0){
+            
+            placeCams();
             window.addEventListener('beforeunload', () => disconnectCamera(user, pass, output));
+            
+        }
         
     }, [output]);
     
@@ -22,7 +27,7 @@ const Login = () => {
         
         let url = `http://${address}:${port}/set?operation=connect&output=${output + 1}&camera=camera.${camera}`;
         
-        let res = await fetch(url, {headers: {'Authorization': 'Basic ' +  btoa(user + ":" + pass) }}); 
+        let res = await fetch(url, {headers: {'Authorization': 'Basic ' +  btoa(entity + ":" + pass) }}); 
         
         if(res.ok){
             
@@ -30,7 +35,7 @@ const Login = () => {
             
             setTimeout(async () => {
                 
-                let { rtsp_ports } = config[user];
+                let { rtsp_ports } = config[entity];
 
                 let current_rtsp = Object.keys(rtsp_ports)[output];
                 
@@ -77,7 +82,7 @@ const Login = () => {
             
             L.marker([camera.coordenades.lat, camera.coordenades.lng], {icon: cameraIcon}).addTo(mapa).on('click', async () => {
                 
-                let { address, port } = config[user];
+                let { address, port } = config[entity];
                 
                 connectCamera(user, pass, address, port, id);
                 
@@ -91,29 +96,25 @@ const Login = () => {
         
         e.preventDefault();
         
-        let { address, port } = config[user];
+        let { address, port, rtsp_ports } = config[entity];
         
         let url = `http://${address}:${port}/set?operation=status`;
         
-        let res = await fetch(url, {headers: {'Authorization': 'Basic ' +  btoa(user + ":" + pass) }});
+        let res = await fetch(url, {headers: {'Authorization': 'Basic ' +  btoa(entity + ":" + pass) }});
         
-        if(res.ok){
+        let output = Object.values(rtsp_ports).findIndex(ports => ports.name === user);
+        
+        if(res.ok && output > -1){
             
-            setAuth('user');
+            setAuth('done');
+            setOutput(output);
             
         }
         else{
             
-            setError('Usuari o contrasenya incorrecte');
+            setError('Les credencials són incorrectes');
             
         }
-        
-    }
-    
-    const displayMap = () => {
-        
-        placeCams();
-        setAuth('done');        
         
     }
 
@@ -123,8 +124,11 @@ const Login = () => {
             ? <div className = 'Login'>
                 <div className = 'Login-Wrapper'>
                     <img src = {'./assets/sct_logo.png'}></img>
-                    <p>Si us plau, identifíca't per poder utilitzar l'aplicació de vídeo a tercers del Servei Català del Trànsit:</p>
+                    <p>Si us plau, selecciona la teva entitat, i accedeix amb el teu usuari i contrasenya:</p>
                     <form onSubmit = {validateUser}>
+                        <select value = {entity} onChange = {(e) => setEntity(e.target.value)}>
+                            {Object.keys(config).map((entity, key) => <option key = {key}>{entity}</option>)}
+                        </select>
                         <input onChange = {(e) => setUser(e.target.value)} placeholder = 'Usuari'></input>
                         <input onChange = {(e) => setPass(e.target.value)} placeholder = 'Contrasenya' type = 'password'></input>
                         <button type = 'submit'>Accedeix</button>
@@ -132,21 +136,6 @@ const Login = () => {
                     <span className = 'Error'>{error}</span>
                 </div>
               </div>
-            : null
-            }
-            {auth === 'user'
-            ? <div className = 'User'> 
-                    <div className = 'User-Wrapper'>
-                        <p>Abans de començar, selecciona el teu perfil d'usuari:</p>
-                        {Object.values(config[user].rtsp_ports).map((member, index) => 
-                            <div className = {output === index ? 'User-Pic Selected' : 'User-Pic'} onClick = {() => setOutput(index)} key = {index}>
-                                <img src = {member.pic}></img>
-                                <span>{member.name}</span>
-                            </div>
-                        )}
-                        {output >= 0 ? <button onClick = {displayMap}>Comença</button> : null}
-                    </div>
-              </div>    
             : null
             }  
             { vlc === 'loading'

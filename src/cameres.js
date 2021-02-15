@@ -4219,7 +4219,7 @@ export default {
         "carretera": "Via Laietana, 60",
         "pk": 0.0,
         "coordenades": {
-            "lat": 41.38814,
+            "lat": 41.38845,
             "lng": 2.173412
         }
     },
@@ -4228,14 +4228,14 @@ export default {
         "pk": 0.0,
         "coordenades": {
             "lat": 41.38815,
-            "lng": 2.173412
+            "lng": 2.173550
         }
     },
     "8003": {
         "carretera": "Via Laietana, 60",
         "pk": 0.0,
         "coordenades": {
-            "lat": 41.38815,
+            "lat": 41.38785,
             "lng": 2.173412
         }
     },
@@ -4244,7 +4244,7 @@ export default {
         "pk": 0.0,
         "coordenades": {
             "lat": 41.38815,
-            "lng": 2.173412
+            "lng": 2.173300
         }
     },
     "9001": {

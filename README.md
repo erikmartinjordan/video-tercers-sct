@@ -56,28 +56,28 @@ L'arxiu **`config.js`** conté la informació dels diversos ports per visualitza
         "port": 81,
         "rtsp_ports": {
             "9001": {
-                "name": "José Carlos García",
-                "pic": "./assets/carlos.png"
+                "name": "lpuigbarraca"
             },
             "9002": {
-                "name": "Jordi Moli",
-                "pic": "./assets/jordi.png"
+                "name": "lserrano"
             },
             "9003": {
-                "name": "Lluís Serrano",
-                "pic": "./assets/lluis.png"
+                "name": "vgallego"
             },
             "9004": {
-                "name": "Vicente Gallego",
-                "pic": "./assets/vicente.png"
+                "name": "jpenya"
             },
             "9005": {
-                "name": "Jean Peña",
-                "pic": "./assets/jean.png"
+                "name": "jcgarcia"
             },
             "9006": {
-                "name": "Visitant",
-                "pic": "./assets/visitant.png"
+                "name": "mserra"
+            },
+            "9007": {
+                "name": "jmoli"
+            },
+            "9008": {
+                "name": "premsa"
             }
         }
     }

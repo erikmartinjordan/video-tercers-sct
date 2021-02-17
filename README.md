@@ -17,7 +17,10 @@ Compilació de l'aplicació per Windows (arquitectura de 32 i 64 bits):
 npx electron-builder --ia32 --x64 -w portable
 ```
 
-**Important**: Comprova que tens l'[VLC](https://www.videolan.org/vlc/index.es.html) instal·lat i executa l'arxiu `.exe` generat. 
+Executa l'arxiu `.exe` generat
+
+
+**Important**: Comprova que tens l'[VLC](https://www.videolan.org/vlc/index.es.html) instal·lat. 
 
 
 ## Modificació de les càmeres

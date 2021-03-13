@@ -11,7 +11,7 @@ Per descarregar el codi font de l'aplicació:
 git clone https://github.com/erikmartinjordan/video-a-tercers
 ```
 
-Compilació de l'aplicació per Windows (arquitectura de 32 i 64 bits):
+Compilació de l'aplicació per a Windows (arquitectura de 32 i 64 bits):
 
 ```terminal
 npx electron-builder --ia32 --x64 -w portable
@@ -20,7 +20,7 @@ npx electron-builder --ia32 --x64 -w portable
 Executa l'arxiu `.exe` generat
 
 
-**Important**: Comprova que tens l'[VLC](https://www.videolan.org/vlc/index.es.html) instal·lat. 
+**Important**: Comprova que tens [VLC](https://www.videolan.org/vlc/index.es.html) instal·lat. 
 
 
 ## Modificació de les càmeres
